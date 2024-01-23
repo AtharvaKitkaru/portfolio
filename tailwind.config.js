@@ -10,6 +10,9 @@ module.exports = {
         "persian-green": "#25a18eff",
         "light-green": "#7ae582ff",
       },
+      backgroundImage: {
+        // "circle-aura": "url('../portfolio/public/blob.svg')",
+      },
     },
   },
   plugins: [],
