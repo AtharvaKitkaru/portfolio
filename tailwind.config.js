@@ -4,14 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "midnight-green": "#004e64ff",
-        "pacific-cyan": "#00a5cfff",
-        aquamarine: "#9fffcbff",
-        "persian-green": "#25a18eff",
-        "light-green": "#7ae582ff",
+        
       },
       backgroundImage: {
         // "circle-aura": "url('../portfolio/public/blob.svg')",
+      },
+      fontFamily: {
+        cubano: "cubano,sans-serif",
       },
     },
   },

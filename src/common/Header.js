@@ -5,25 +5,25 @@ function Header() {
   return (
     <div className="header flex space-x-4 justify-end p-3 md:pr-10">
       <div>
-        <Link to="/">Home</Link>
+        <a href="/">Home</a>
       </div>
       <div>
-        <Link to="/about">About</Link>
+        <a href="#about">About</a>
       </div>
       <div>
-        <Link to="/qualifications">Qualification</Link>
+        <a href="#qualifications">Qualification</a>
       </div>
       <div>
-        <Link to="/skills">Skills</Link>
+        <a href="#skills">Skills</a>
       </div>
       <div>
-        <Link to="/projects">Projects</Link>
+        <a href="#projects">Projects</a>
       </div>
       <div>
-        <Link to="/publications">Publications</Link>
+        <a href="#publications">Publications</a>
       </div>
       <div>
-        <Link to="/certifications">Certifications</Link>
+        <a href="#certifications">Certifications</a>
       </div>
     </div>
   );

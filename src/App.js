@@ -10,20 +10,14 @@ import Publications from "./components/Publications.js";
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/qualifications" element={<Qualifications />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/certifications" element={<Certifications />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/publications" element={<Publications />} />
-          </Routes>
-        </BrowserRouter>
+    <div className="App font-cubano">
+      <div className="sticky top-0 z-10 bg-slate-100 ">
+        <Header />
+      </div>
+      <div className="z-0 bg-[rgb(32,39,55)] text-white">
+        <Home />
+        <About />
+        <Qualifications />
       </div>
     </div>
   );
