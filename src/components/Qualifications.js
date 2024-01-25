@@ -4,7 +4,7 @@ function Qualifications() {
   return (
     <div
       id="qualifications"
-      className="min-h-screen justify-center align-middle w-full"
+      className="page"
     >
       <div className="page-heading bg-yellow-500">Qualifications</div>
       <div className="flex justify-center align-middle">

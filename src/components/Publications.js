@@ -1,7 +1,11 @@
 import React from "react";
 
 function Publications() {
-  return <div>Publications</div>;
+  return (
+    <div id="certifications" className="page">
+      Publications
+    </div>
+  );
 }
 
 export default Publications;
