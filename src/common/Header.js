@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,7 +10,7 @@ function Header() {
         <a href="#about">About</a>
       </div>
       <div>
-        <a href="#qualifications">Qualification</a>
+        <a href="#qualifications">Qualifications</a>
       </div>
       <div>
         <a href="#skills">Skills</a>

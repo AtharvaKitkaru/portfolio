@@ -1,4 +1,3 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home.js";
 import Header from "./common/Header.js";
 import Qualifications from "./components/Qualifications.js";
@@ -14,10 +13,14 @@ function App() {
       <div className="sticky top-0 z-10 bg-slate-100 ">
         <Header />
       </div>
-      <div className="z-0 bg-[rgb(32,39,55)] text-white">
+      <div className="z-0 bg-[rgb(32,39,55)] text-[#B2BECD]">
         <Home />
         <About />
         <Qualifications />
+        <Skills />
+        <Projects />
+        <Publications />
+        <Certifications />
       </div>
     </div>
   );

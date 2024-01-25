@@ -3,14 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      colors: {
-        
-      },
+      colors: {},
       backgroundImage: {
         // "circle-aura": "url('../portfolio/public/blob.svg')",
       },
       fontFamily: {
         cubano: "cubano,sans-serif",
+        sofia: "sofia-pro,sans-serif",
       },
     },
   },

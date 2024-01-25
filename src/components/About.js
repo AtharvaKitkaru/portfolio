@@ -13,10 +13,8 @@ function About() {
         <img className="m-auto" src="atharva-2.png" alt="Atharva" />
       </div>
       <div className="flex-1 m-auto text-center ">
-        <div className="font-bold text-3xl bg-red-500 text-black w-fit p-2 m-auto">
-          Why Hire Me?
-        </div>
-        <div>Some content</div>
+        <div className="page-heading bg-red-500">Why Hire Me?</div>
+        <div className="font-sofia">Some content</div>
       </div>
     </div>
   );
