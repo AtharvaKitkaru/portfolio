@@ -1,22 +1,25 @@
 import React from "react";
 import linkImage from "../assets/link.png";
+import Separator from "../common/Separator";
+
 function Qualifications() {
   return (
-    <div
-      id="qualifications"
-      className="page"
-    >
-      <div className="page-heading bg-yellow-500">Qualifications</div>
-      <div className="flex justify-center align-middle">
+    <div id="qualifications" className="page">
+      <div className="page-heading  dark:bg-yellow-500">Qualifications</div>
+      <Separator />
+
+      <div className="flex flex-col md:flex-row justify-center align-middle">
         <div className=" flex-column justify-center align-middle mt-4 ml-12 p-5">
-          <div className="text-white text-xl font-bold mb-5">Education</div>
+          <div className="text-slate-500 dark:text-white text-xl font-bold mb-5">
+            Education
+          </div>
           <ol className="relative border-s border-gray-500">
             <li className="mb-7 ms-4">
-              <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border "></div>
+              <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
                 May 2023
               </time>
-              <h3 className="text-md text-white dark:text-white">
+              <h3 className="text-md text-gray-500 font-semibold uppercase dark:text-white">
                 K.J Somaiya College Of Engineering, VidyaVihar
               </h3>
               <p className=" text-sm  font-normal text-gray-400 ">
@@ -27,11 +30,11 @@ function Qualifications() {
               </p>
             </li>
             <li className="mb-7 ms-4">
-              <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border  border-white"></div>
+              <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
                 May 2018
               </time>
-              <h3 className="text-md text-white">
+              <h3 className="text-md  text-gray-500 font-semibold uppercase dark:text-white">
                 Mahila Samiti Junior College
               </h3>
               <p className="text-sm font-normal text-gray-400 ">
@@ -42,11 +45,11 @@ function Qualifications() {
               </p>
             </li>
             <li className="mb-10 ms-4">
-              <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+              <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400">
                 April 2016
               </time>
-              <h3 className="text-md text-white">
+              <h3 className="text-md text-gray-500 font-semibold uppercase dark:text-white">
                 IES Chandrakant Patkar Vidyalaya
               </h3>
               <p className="text-sm font-normal text-gray-400 ">
@@ -59,14 +62,16 @@ function Qualifications() {
           </ol>
         </div>
         <div className="grow flex-column justify-center align-middle mt-4 ml-12 p-5">
-          <div className="text-white text-xl font-bold mb-5">Experience</div>
+          <div className="text-slate-500 dark:text-white text-xl font-bold mb-5">
+            Experience
+          </div>
           <ol className="relative border-s border-gray-500">
             <li className="mb-7 ms-4">
-              <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border "></div>
+              <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
                 June 2022 - Present
               </time>
-              <h3 className="text-md text-white dark:text-white">
+              <h3 className="text-md text-gray-500 font-semibold uppercase dark:text-white">
                 Oracle Financial Software Services | Associate Consultant
               </h3>
               <p className=" text-sm  font-normal text-gray-400 p-1">
@@ -92,12 +97,12 @@ function Qualifications() {
               </p>
             </li>
             <li className="mb-7 ms-4">
-              <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border  border-white"></div>
+              <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
                 May 2020 – Aug 2020
               </time>
               <a href="https://github.com/AtharvaKitkaru/ProjectPortal.git">
-                <h3 className="text-md text-white flex align-middle">
+                <h3 className="text-md text-gray-500 dark:text-white font-semibold uppercase flex align-middle">
                   K.J.S.C.E, IT Department | Software Engineering Intern
                   <img className="pl-2" src={linkImage} alt="link" />
                 </h3>
@@ -108,12 +113,12 @@ function Qualifications() {
               </p>
             </li>
             <li className="mb-10 ms-4">
-              <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+              <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
                 May 2020 – Aug 2020
               </time>
               <a href="https://github.com/SIH2020sgss/">
-                <h3 className="text-md text-white flex align-middle">
+                <h3 className="text-md text-gray-500 dark:text-white font-semibold uppercase flex align-middle">
                   K.J.S.C.E, IT Department | Software Engineering Intern
                   <img className="pl-2" src={linkImage} alt="link" />
                 </h3>

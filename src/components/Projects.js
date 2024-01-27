@@ -1,4 +1,5 @@
 import React from "react";
+import Separator from "../common/Separator";
 
 const tags = {
   reactjs: (
@@ -214,27 +215,26 @@ const projects = {
     description:
       "A blockchain-based decentralized music streaming platform where artists can share their music while ensuring ownership and avoiding duplication of their music. People can listen to songs and support the artists by making micropayments through our custom crypto tokens.",
   },
-
-
 };
 
 function Projects() {
   return (
     <div id="projects" className="page">
-      <div className="page-heading bg-blue-500">Projects</div>
-      <div className="grid grid-cols-3 gap-5 p-5 ">
+      <div className="page-heading dark:bg-blue-500">Projects</div>
+      <Separator />
+      <div className="grid grid-cols-1 p-5 md:grid-cols-3 gap-5">
         {Object.keys(projects).map((projectId) => {
           const project = projects[projectId];
           return (
             <div
               key={projectId}
-              className="md:min-w-5 bg-gray-700  h-auto  p-2 rounded-md transition-transform transform hover:scale-105 hover:cursor-pointer relative"
+              className="m-auto min-w-[80vw] md:w-full md:min-w-full md:h-full bg-gray-400 dark:bg-gray-700 p-2 rounded-md transition-transform transform hover:scale-105 hover:cursor-pointer relative"
             >
               <a href={project.link}>
                 <div className="text-white font-bold text-md uppercase p-1 font-cubano">
                   {project.title}
                 </div>
-                <div className="text-sm p-2 font-sofia">
+                <div className=" text-slate-200 text-sm p-2 font-sofia text-ellipsis ">
                   {project.description}
                 </div>
                 <div className=" flex flex-wrap p-2">

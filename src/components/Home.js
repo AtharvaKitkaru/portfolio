@@ -2,9 +2,9 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="m-0 p-0  page flex flex-col-reverse md:flex-row">
+    <div className="w-full min-h-screen flex flex-col-reverse md:flex-row justify-center align-middle">
       <div className="flex-1 m-auto text-center max-h-screen flex-column justify-center align-middle">
-        <div className="text-3xl md:text-4xl text-wrap font-bold uppercase m-auto text-slate-800 dark:text-white pt-5 md:pt-0">
+        <div className="text-3xl md:text-4xl text-wrap font-bold uppercase m-auto text-slate-800 dark:text-white py-5 px-1 md:pt-0">
           I am{" "}
           <span className="text-[#c3a342] dark:text-[#ffbf00]">
             Atharva Kitkaru.
@@ -17,10 +17,10 @@ function Home() {
       </div>
 
       <div
-        className="flex-1 m-auto bg-no-repeat bg-fill bg-cover w-full h-1/2 md:h-screen flex justify-center align-middle"
+        className="flex-1 m-auto bg-no-repeat bg-fill bg-cover w-full h-1/3 md:h-screen flex justify-center align-middle"
         style={{ backgroundImage: "url('/blob.png')" }}
       >
-        <img className="m-auto h-1/3" src="atharva.png" alt="Atharva" />
+        <img className="m-auto w-2/3 h-1/3" src="atharva.png" alt="Atharva" />
       </div>
     </div>
   );

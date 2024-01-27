@@ -1,7 +1,4 @@
 introduce light mode
-    Projects -> 30 mins
-    Qualifications -> 30 mins
 introduce mobile responsiveness\
-    Projects -> 30 mins
     Qualifications -> 30 mins
 Fix header toggle issues -> 30 mins
