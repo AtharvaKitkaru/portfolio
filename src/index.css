@@ -7,7 +7,7 @@
   }
 
   .page{
-    @apply min-h-screen justify-center align-middle w-full
+    @apply min-h-screen w-full
   }
 }
 body {

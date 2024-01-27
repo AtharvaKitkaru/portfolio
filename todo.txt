@@ -1,10 +1,8 @@
 introduce light mode
-    Home
-    About
-    Projects
-    Qualifications
+    Projects -> 30 mins
+    Qualifications -> 30 mins
 introduce mobile responsiveness\
-    Home
-    About
-    Projects
-    Qualifications
+    Home -> 30 mins
+    Projects -> 30 mins
+    Qualifications -> 30 mins
+Fix header toggle issues -> 30 mins
