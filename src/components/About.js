@@ -6,7 +6,7 @@ function About() {
   return (
     <div
       id="about"
-      className="w-full min-h-screen bg-slate-100 flex flex-col md:flex-row justify-center align-middle p-0 m-0"
+      className="w-full min-h-screen bg-slate-100 dark:bg-[rgb(32,39,55)] flex flex-col md:flex-row justify-center align-middle p-0 m-0"
     >
       <div
         className="flex-1 m-auto bg-no-repeat bg-fill bg-cover  w-full h-1/2 md:h-screen flex justify-center align-middle"

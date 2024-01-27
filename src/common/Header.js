@@ -1,13 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import menupng from "../assets/three-lines.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
+  );
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
+  useEffect(() => {
+    // Update the class on the html tag
+    document.documentElement.classList.toggle("dark", isDarkMode);
 
+    // Store the dark mode preference in localStorage
+    localStorage.setItem("darkMode", isDarkMode.toString());
+  }, [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
   return (
     <div className="header  w-full flex flex-col md:flex-row md:space-x-4 justify-end p-3 md:pr-10 relative m-0">
       {/* Toggle button for mobile */}
@@ -78,6 +93,35 @@ function Header() {
           </div>
         </div>
       )}
+      {/* <ReactTooltip id="light" place="top" effect="solid" /> */}
+
+      {/* <ReactTooltip id="dark" place="top" effect="solid" /> */}
+
+      <button onClick={toggleDarkMode}>
+        {isDarkMode ? (
+          <FontAwesomeIcon
+            icon={faLightbulb}
+            data-tooltip-id="dark"
+            data-tooltip-content="Lumos!"
+            className="cursor-pointer outline-none"
+            style={{
+              "--fa-primary-color": "#1e1f1f",
+              "--fa-secondary-color": "#d0c00b",
+            }}
+          />
+        ) : (
+          <FontAwesomeIcon
+            icon={faMoon}
+            data-tooltip-id="light"
+            data-tooltip-content="Nox!"
+            className="cursor-pointer outline-none"
+            style={{
+              "--fa-primary-color": "#1e1f1f",
+              "--fa-secondary-color": "#d0c00b",
+            }}
+          />
+        )}
+      </button>
     </div>
   );
 }
