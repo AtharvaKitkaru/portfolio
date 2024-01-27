@@ -1,4 +1,10 @@
-introduce light mode and responsiveness for:
+introduce light mode
     Home
     About
-    
+    Projects
+    Qualifications
+introduce mobile responsiveness\
+    Home
+    About
+    Projects
+    Qualifications
