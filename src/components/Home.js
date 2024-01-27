@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="m-0 p-0  w-full h-[100vh] flex">
+    <div className="m-0 p-0  w-full h-[100vh] flex flex-col-reverse md:flex-row">
       <div className="flex-1 m-auto text-center max-h-screen flex-column justify-center align-middle">
         <div className="text-4xl font-bold uppercase  m-auto text-white">
           I am <span className="text-[#ffbf00]">Atharva Kitkaru.</span>

@@ -10,10 +10,10 @@ import Publications from "./components/Publications.js";
 function App() {
   return (
     <div className="App font-cubano">
-      <div className="sticky top-0 z-10 bg-slate-100 ">
+      <div className="sticky top-0 z-10 bg-white dark:bg-slate-100 ">
         <Header />
       </div>
-      <div className="z-0 bg-[rgb(32,39,55)] text-[#B2BECD]">
+      <div className="z-0 bg-slate-200 dark:bg-[rgb(32,39,55)] text-[#989ea5] dark:text-[#B2BECD]">
         <Home />
         <About />
         <Qualifications />

@@ -1,0 +1,4 @@
+introduce light mode and responsiveness for:
+    Home
+    About
+    
