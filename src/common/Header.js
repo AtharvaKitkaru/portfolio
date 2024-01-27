@@ -24,7 +24,7 @@ function Header() {
     setIsDarkMode(!isDarkMode);
   };
   return (
-    <div className="header  w-full flex flex-col md:flex-row md:space-x-4 justify-end p-3 md:pr-10 relative m-0">
+    <div className="header  w-full flex flex-row md:space-x-4 justify-between p-3 md:pr-10 relative m-0">
       {/* Toggle button for mobile */}
       {!isMobileMenuOpen && (
         <button
@@ -97,7 +97,7 @@ function Header() {
 
       {/* <ReactTooltip id="dark" place="top" effect="solid" /> */}
 
-      <button onClick={toggleDarkMode}>
+      <button onClick={toggleDarkMode} className="w-10">
         {isDarkMode ? (
           <FontAwesomeIcon
             icon={faLightbulb}

@@ -1,7 +1,6 @@
 introduce mobile responsiveness\
     Qualifications -> 30 mins
 fix header toggle issues -> 30 mins
-fix darktoggle position on header
 add skills
 add publications
 add certifications
