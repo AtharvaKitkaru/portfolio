@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import linkImage from "../assets/link.png";
 import Separator from "../common/Separator";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faUpRightFromSquare,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Qualifications() {
@@ -142,8 +145,15 @@ function Qualifications() {
               </time>
               <a href="https://github.com/AtharvaKitkaru/ProjectPortal.git">
                 <h3 className="text-md text-gray-500 dark:text-white font-semibold uppercase flex align-middle">
-                  K.J.S.C.E, IT Department | Software Engineering Intern
-                  <img className="pl-2" src={linkImage} alt="link" />
+                  <div>
+                    K.J.S.C.E, IT Department | Software Engineering Intern
+                  </div>
+                  <div>
+                    <FontAwesomeIcon
+                      className="ml-2"
+                      icon={faUpRightFromSquare}
+                    />
+                  </div>
                 </h3>
               </a>
               <p className="text-sm font-normal text-gray-400 p-1">
@@ -158,8 +168,15 @@ function Qualifications() {
               </time>
               <a href="https://github.com/SIH2020sgss/">
                 <h3 className="text-md text-gray-500 dark:text-white font-semibold uppercase flex align-middle">
-                  K.J.S.C.E, IT Department | Software Engineering Intern
-                  <img className="pl-2" src={linkImage} alt="link" />
+                  <div>
+                    K.J.S.C.E, IT Department | Software Engineering Intern
+                  </div>
+                  <div>
+                    <FontAwesomeIcon
+                      className="ml-2"
+                      icon={faUpRightFromSquare}
+                    />
+                  </div>
                 </h3>
               </a>
               <p className="text-sm font-normal text-gray-400 p-1">
