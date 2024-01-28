@@ -1,6 +1,5 @@
-import React, { useEffect, useState, useRef, useCallback } from "react";
+import React from "react";
 import "./Projects.css";
-import Slider from "react-slick";
 const tags = {
   reactjs: (
     <div className="text-gray-600 bg-green-300 text-xs p-1 rounded-md">

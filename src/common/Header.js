@@ -2,16 +2,21 @@ import React, { useState, useEffect } from "react";
 import menupng from "../assets/three-lines.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { Tooltip as ReactTooltip } from "react-tooltip";
 
 function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.getItem("darkMode") === "true"
   );
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   useEffect(() => {
     // Update the class on the html tag
     document.documentElement.classList.toggle("dark", isDarkMode);
@@ -23,6 +28,7 @@ function Header() {
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
+
   return (
     <div className="header w-full h-[8vh] flex flex-row md:space-x-4 justify-between p-3 md:pr-10 relative m-0">
       {/* Toggle button for mobile */}
@@ -37,25 +43,27 @@ function Header() {
 
       {/* Header links for desktop */}
       <div className={`hidden md:flex space-x-4 w-screen md:w-auto}`}>
-        <div>
+        {/* Other menu items */}
+        {/* Add onClick handlers to close the mobile menu */}
+        <div onClick={closeMobileMenu}>
           <a href="/">Home</a>
         </div>
-        <div>
+        <div onClick={closeMobileMenu}>
           <a href="#about">About</a>
         </div>
-        <div>
+        <div onClick={closeMobileMenu}>
           <a href="#qualifications">Qualifications</a>
         </div>
-        <div>
+        <div onClick={closeMobileMenu}>
           <a href="#skills">Skills</a>
         </div>
-        <div>
+        <div onClick={closeMobileMenu}>
           <a href="#projects">Projects</a>
         </div>
-        <div>
+        <div onClick={closeMobileMenu}>
           <a href="#publications">Publications</a>
         </div>
-        <div>
+        <div onClick={closeMobileMenu}>
           <a href="#certifications">Certifications</a>
         </div>
       </div>
@@ -64,45 +72,37 @@ function Header() {
       {isMobileMenuOpen && (
         <div className="absolute flex flex-col align-top top-0 left-0 w-[70vw] h-screen bg-white md:hidden m-0">
           {/* Mobile menu content */}
-          <button
-            className="block md:hidden p-3"
-            onClick={toggleMobileMenu}
-          >
-            <img className="w-10" src={menupng} alt="menuicon" />
-          </button>
-          <div className="p-5 pl-2">
+          {/* Other menu items */}
+          {/* Add onClick handlers to close the mobile menu */}
+          <div className="p-5 pl-2" onClick={closeMobileMenu}>
             <a href="/">Home</a>
           </div>
-          <div className="p-5 pl-2">
+          <div className="p-5 pl-2" onClick={closeMobileMenu}>
             <a href="#about">About</a>
           </div>
-          <div className="p-5 pl-2">
+          <div className="p-5 pl-2" onClick={closeMobileMenu}>
             <a href="#qualifications">Qualifications</a>
           </div>
-          <div className="p-5 pl-2">
+          <div className="p-5 pl-2" onClick={closeMobileMenu}>
             <a href="#skills">Skills</a>
           </div>
-          <div className="p-5 pl-2">
+          <div className="p-5 pl-2" onClick={closeMobileMenu}>
             <a href="#projects">Projects</a>
           </div>
-          <div className="p-5 pl-2">
+          <div className="p-5 pl-2" onClick={closeMobileMenu}>
             <a href="#publications">Publications</a>
           </div>
-          <div className="p-5 pl-2">
+          <div className="p-5 pl-2" onClick={closeMobileMenu}>
             <a href="#certifications">Certifications</a>
           </div>
         </div>
       )}
-      {/* <ReactTooltip id="light" place="top" effect="solid" /> */}
 
-      {/* <ReactTooltip id="dark" place="top" effect="solid" /> */}
-
+      {/* Dark mode toggle */}
       <button onClick={toggleDarkMode} className="w-10">
         {isDarkMode ? (
           <FontAwesomeIcon
             icon={faLightbulb}
-            data-tooltip-id="dark"
-            data-tooltip-content="Lumos!"
             className="cursor-pointer outline-none"
             style={{
               "--fa-primary-color": "#1e1f1f",
@@ -112,8 +112,6 @@ function Header() {
         ) : (
           <FontAwesomeIcon
             icon={faMoon}
-            data-tooltip-id="light"
-            data-tooltip-content="Nox!"
             className="cursor-pointer outline-none"
             style={{
               "--fa-primary-color": "#1e1f1f",

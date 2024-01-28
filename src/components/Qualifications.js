@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Separator from "../common/Separator";
 import {
   faAngleDown,
   faUpRightFromSquare,
