@@ -2,4 +2,5 @@ add skills
 add publications
 add certifications
 add about
-add animation to mobile toggle
+
+add animations.

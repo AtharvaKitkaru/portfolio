@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer components {
   .page-heading {
-    @apply font-bold text-2xl text-black w-fit p-3 m-auto uppercase;
+    @apply font-bold text-3xl text-black w-fit p-3 m-auto uppercase;
   }
 
   .page{
@@ -17,6 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 code {

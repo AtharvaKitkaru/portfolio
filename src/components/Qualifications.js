@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import linkImage from "../assets/link.png";
 import Separator from "../common/Separator";
 import {
   faAngleDown,
@@ -23,18 +22,18 @@ function Qualifications() {
       <div className="page-heading mt-6  dark:bg-yellow-500">
         Qualifications
       </div>
-      <Separator />
+      {/* <Separator /> */}
 
       <div className="flex flex-col md:flex-row justify-center align-middle">
         <div className=" flex-column justify-center align-middle mt-4 ml-12 pl-5 pt-4 cursor-pointer">
           <div
             className="flex flex-row text-slate-500 dark:text-white text-xl font-bold mb-5 w-2/3 "
-            onClick={handleToggleEducation}
+            // onClick={handleToggleEducation}
           >
             <div>Education</div>
 
             <div className="ml-3">
-              <FontAwesomeIcon icon={faAngleDown} />
+              {/* <FontAwesomeIcon icon={faAngleDown} /> */}
             </div>
           </div>
 
@@ -92,13 +91,13 @@ function Qualifications() {
         </div>
         <div
           className="grow flex-column justify-center align-middle mt-4 ml-12 pl-5 pt-4 cursor-pointer"
-          onClick={handleToggleExperience}
+          // onClick={handleToggleExperience}
         >
           <div className="flex flex-row text-slate-500 dark:text-white text-xl font-bold mb-5">
             <div>Experience</div>
             <div>
               <div className="ml-3">
-                <FontAwesomeIcon icon={faAngleDown} />
+                {/* <FontAwesomeIcon icon={faAngleDown} /> */}
               </div>
             </div>
           </div>
@@ -150,7 +149,7 @@ function Qualifications() {
                   </div>
                   <div>
                     <FontAwesomeIcon
-                      className="ml-2"
+                      className="md:ml-2"
                       icon={faUpRightFromSquare}
                     />
                   </div>

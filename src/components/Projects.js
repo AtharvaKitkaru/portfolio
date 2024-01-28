@@ -1,6 +1,6 @@
-import React from "react";
-import Separator from "../common/Separator";
-
+import React, { useEffect, useState, useRef, useCallback } from "react";
+import "./Projects.css";
+import Slider from "react-slick";
 const tags = {
   reactjs: (
     <div className="text-gray-600 bg-green-300 text-xs p-1 rounded-md">
@@ -177,7 +177,7 @@ const projects = {
     tags: ["flutter", "firebase"],
     link: "https://github.com/AtharvaKitkaru/noteify.git",
     description:
-      "An Android note taking and management app which allows users to create notes, add images, sort notes, categorize them by labels, move notes to trash and restore them.",
+      "An Android note-taking and management app that allows users to create notes, add images, sort notes, categorize them by labels, move notes to trash and restore them.",
   },
   spotify: {
     title: "Spotify Clone",
@@ -220,24 +220,23 @@ const projects = {
 function Projects() {
   return (
     <div id="projects" className="page">
-      <div className="page-heading dark:bg-blue-500">Projects</div>
-      <Separator />
-      <div className="grid grid-cols-1 p-5 md:grid-cols-3 gap-5">
+      <div className="page-heading dark:bg-blue-500 my-12">Projects</div>
+      <div className="m-auto grid grid-flow-col grid-rows-1  align-middle h-[60vh] w-[90vw] overflow-x-scroll custom-scrollbar">
         {Object.keys(projects).map((projectId) => {
           const project = projects[projectId];
           return (
             <div
               key={projectId}
-              className="m-auto min-w-[80vw] md:w-full md:min-w-full md:h-full bg-gray-400 dark:bg-gray-700 p-2 rounded-md transition-transform transform hover:scale-105 hover:cursor-pointer relative"
+              className="m-3 min-w-[75vw] min-h-[35vh] md:min-w-[30vw] bg-slate-400 dark:bg-gray-700 p-2 rounded-lg transition-transform hover:scale-105 hover:cursor-pointer focus-visible:scale-105 focus:scale-105"
             >
               <a href={project.link}>
                 <div className="text-white font-bold text-md uppercase p-1 font-cubano">
                   {project.title}
                 </div>
-                <div className=" text-slate-200 text-sm p-2 font-sofia text-ellipsis ">
+                <div className="text-slate-200 text-sm p-2 font-sofia text-ellipsis">
                   {project.description}
                 </div>
-                <div className=" flex flex-wrap p-2">
+                <div className="flex flex-wrap p-2">
                   {project.tags.map((tag) => (
                     <div key={tag} className="pr-2 pt-2">
                       {tags[tag]}
