@@ -24,7 +24,7 @@ function Header() {
     setIsDarkMode(!isDarkMode);
   };
   return (
-    <div className="header  w-full flex flex-row md:space-x-4 justify-between p-3 md:pr-10 relative m-0">
+    <div className="header w-full h-[8vh] flex flex-row md:space-x-4 justify-between p-3 md:pr-10 relative m-0">
       {/* Toggle button for mobile */}
       {!isMobileMenuOpen && (
         <button
@@ -62,10 +62,10 @@ function Header() {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="absolute flex flex-col align-top top-0 left-0 w-[70vw] h-screen bg-white md:hidden m-0 transition duration-300 ease-in-out">
+        <div className="absolute flex flex-col align-top top-0 left-0 w-[70vw] h-screen bg-white md:hidden m-0">
           {/* Mobile menu content */}
           <button
-            className="block md:hidden p-3 transition-opacity"
+            className="block md:hidden p-3"
             onClick={toggleMobileMenu}
           >
             <img className="w-10" src={menupng} alt="menuicon" />

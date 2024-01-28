@@ -20,7 +20,7 @@ function Home() {
         className="flex-1 m-auto bg-no-repeat bg-fill bg-cover w-full h-1/3 md:h-screen flex justify-center align-middle"
         style={{ backgroundImage: "url('/blob.png')" }}
       >
-        <img className="m-auto w-2/3 h-1/3" src="atharva.png" alt="Atharva" />
+        <img className="m-auto w-2/3 h-2/3" src="atharva.png" alt="Atharva" />
       </div>
     </div>
   );

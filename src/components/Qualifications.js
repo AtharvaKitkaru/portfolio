@@ -1,19 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import linkImage from "../assets/link.png";
 import Separator from "../common/Separator";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Qualifications() {
+  const [toggleEducation, setToggleEducation] = useState(true);
+  const [toggleExperience, setToggleExperience] = useState(true);
+
+  const handleToggleEducation = () => {
+    setToggleEducation((prevState) => !prevState);
+  };
+
+  const handleToggleExperience = () => {
+    setToggleExperience((prevState) => !prevState);
+  };
   return (
     <div id="qualifications" className="page">
-      <div className="page-heading  dark:bg-yellow-500">Qualifications</div>
+      <div className="page-heading mt-6  dark:bg-yellow-500">
+        Qualifications
+      </div>
       <Separator />
 
       <div className="flex flex-col md:flex-row justify-center align-middle">
-        <div className=" flex-column justify-center align-middle mt-4 ml-12 p-5">
-          <div className="text-slate-500 dark:text-white text-xl font-bold mb-5">
-            Education
+        <div className=" flex-column justify-center align-middle mt-4 ml-12 pl-5 pt-4 cursor-pointer">
+          <div
+            className="flex flex-row text-slate-500 dark:text-white text-xl font-bold mb-5 w-2/3 "
+            onClick={handleToggleEducation}
+          >
+            <div>Education</div>
+
+            <div className="ml-3">
+              <FontAwesomeIcon icon={faAngleDown} />
+            </div>
           </div>
-          <ol className="relative border-s border-gray-500">
+
+          <ol
+            className={`relative border-s border-gray-500 transition duration-300 ease-in-out ${
+              toggleEducation ? "" : "hidden"
+            }`}
+          >
             <li className="mb-7 ms-4">
               <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
@@ -61,11 +87,24 @@ function Qualifications() {
             </li>
           </ol>
         </div>
-        <div className="grow flex-column justify-center align-middle mt-4 ml-12 p-5">
-          <div className="text-slate-500 dark:text-white text-xl font-bold mb-5">
-            Experience
+        <div
+          className="grow flex-column justify-center align-middle mt-4 ml-12 pl-5 pt-4 cursor-pointer"
+          onClick={handleToggleExperience}
+        >
+          <div className="flex flex-row text-slate-500 dark:text-white text-xl font-bold mb-5">
+            <div>Experience</div>
+            <div>
+              <div className="ml-3">
+                <FontAwesomeIcon icon={faAngleDown} />
+              </div>
+            </div>
           </div>
-          <ol className="relative border-s border-gray-500">
+
+          <ol
+            className={`relative border-s border-gray-500 ${
+              toggleExperience ? "" : "hidden"
+            } `}
+          >
             <li className="mb-7 ms-4">
               <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
