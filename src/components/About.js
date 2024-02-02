@@ -6,6 +6,7 @@ function About() {
   return (
     <div
       id="about"
+      data-aos="fade-up"
       className="w-full min-h-screen bg-slate-100 dark:bg-[rgb(32,39,55)] flex flex-col md:flex-row justify-center align-middle p-0 m-0"
     >
       <div

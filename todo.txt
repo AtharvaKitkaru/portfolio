@@ -1,6 +1,8 @@
-add skills
 add publications
 add certifications
 add about
-
+add footer for contact details
 add animations.
+change colour theme.
+fix mobile view: qualifications section, about section
+add image to left of skills section
