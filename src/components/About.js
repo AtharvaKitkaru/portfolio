@@ -17,10 +17,10 @@ function About() {
       </div>
       <div className="flex flex-col md:flex-row justify-start align-top">
         <div
-          className="flex-1 m-auto bg-no-repeat bg-fill bg-cover w-full h-1/2 md:h-screen flex justify-center align-middle relative"
+          className="flex-1 m-auto bg-no-repeat bg-fill bg-cover w-full h-1/2 md:h-screen flex justify-center align-middle"
           style={{ backgroundImage: `url(${blobpng})` }}
         >
-          <img className="m-auto h-1/3 absolute" src={atharva2} alt="Atharva" />
+          <img className="m-auto h-1/3 " src={atharva2} alt="Atharva" />
         </div>
 
         <div className="flex-1 m-auto dark:text-white mt-5 md:mt-0">
