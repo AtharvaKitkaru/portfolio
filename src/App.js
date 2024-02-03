@@ -6,24 +6,31 @@ import Skills from "./components/Skills.js";
 import Certifications from "./components/Certifications.js";
 import Projects from "./components/Projects.js";
 
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App font-cubano text-pretty text-wrap">
-      <div className="sticky top-0 z-10 bg-white dark:bg-slate-100 ">
-        <Header />
+    <Router>
+      <Routes>
+        <Route path="/qualifcations/#ofss" />
+        {/* <Route path="/#section2" component={Projects} /> */}
+        {/* Add more Switch for other sections if needed */}
+      </Routes>
+      <div className="App font-poppins text-pretty text-wrap">
+        <div className="sticky top-0 z-10 bg-white dark:bg-slate-100 ">
+          <Header />
+        </div>
+        <div className="z-0 bg-slate-200 dark:bg-[#111] text-[#474748] dark:text-[#B2BECD] px-9">
+          <Home />
+
+          <About />
+          <Qualifications />
+          <Skills />
+          <Projects />
+          {/* <Publications /> */}
+          <Certifications />
+        </div>
       </div>
-      <div className="z-0 bg-slate-200 dark:bg-[rgb(32,39,55)] text-[#989ea5] dark:text-[#B2BECD]">
-        <Home />
-        {/* <Separator /> */}
-        {/* <InfiniteScrollTape /> */}
-        <About />
-        <Qualifications />
-        <Skills />
-        <Projects />
-        {/* <Publications /> */}
-        <Certifications />
-      </div>
-    </div>
+    </Router>
   );
 }
 

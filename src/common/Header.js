@@ -30,7 +30,7 @@ function Header() {
   };
 
   return (
-    <div className="header w-full h-[8vh] flex flex-row md:space-x-4 justify-between p-3 md:pr-10 relative m-0">
+    <div className="header w-full h-[8vh] flex flex-row md:space-x-4 justify-between p-3 md:pr-10 relative m-0 ">
       {/* Toggle button for mobile */}
       {!isMobileMenuOpen && (
         <button

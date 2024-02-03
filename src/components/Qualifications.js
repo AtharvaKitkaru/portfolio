@@ -106,36 +106,38 @@ function Qualifications() {
               toggleExperience ? "" : "hidden"
             } `}
           >
-            <li className="mb-7 ms-4">
-              <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
-                June 2022 - Present
-              </time>
-              <h3 className="text-md text-gray-500 font-semibold uppercase dark:text-white">
-                Oracle Financial Software Services | Associate Consultant
-              </h3>
-              <p className=" text-sm  font-normal text-gray-400 p-1">
-                Led and delivered a scalable, zero-downtime containerization
-                solution for a critical service, managing the entire lifecycle
-                from inception to production using Crio, Kubernetes, Helm,
-                Grafana, Prometheus, ELK, and Jenkins.
-              </p>
-              <p className=" text-sm  font-normal text-gray-400 p-1">
-                Orchestrated development and administration of 6 database
-                schemas. Engineered and managed end-to-end WebLogic setups for 6
-                applications, ensuring robust deployment and operation.
-              </p>
-              <p className=" text-sm  font-normal text-gray-400 p-1">
-                Oversaw Linux server management, including software
-                installations, system optimization, troubleshooting, and
-                infrastructure enhancement.
-              </p>
-              <p className=" text-sm  font-normal text-gray-400 p-1">
-                Reduced 60% deployment time by automating deployment processes,
-                data source creation, cronjobs, and code commits using Python
-                and shell scripts in sync with Jenkins.
-              </p>
-            </li>
+            <section id="ofss">
+              <li className="mb-7 ms-4">
+                <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
+                  June 2022 - Present
+                </time>
+                <h3 className="text-md text-gray-500 font-semibold uppercase dark:text-white">
+                  Oracle Financial Software Services | Associate Consultant
+                </h3>
+                <p className=" text-sm  font-normal text-gray-400 p-1">
+                  Led and delivered a scalable, zero-downtime containerization
+                  solution for a critical service, managing the entire lifecycle
+                  from inception to production using Crio, Kubernetes, Helm,
+                  Grafana, Prometheus, ELK, and Jenkins.
+                </p>
+                <p className=" text-sm  font-normal text-gray-400 p-1">
+                  Orchestrated development and administration of 6 database
+                  schemas. Engineered and managed end-to-end WebLogic setups for
+                  6 applications, ensuring robust deployment and operation.
+                </p>
+                <p className=" text-sm  font-normal text-gray-400 p-1">
+                  Oversaw Linux server management, including software
+                  installations, system optimization, troubleshooting, and
+                  infrastructure enhancement.
+                </p>
+                <p className=" text-sm  font-normal text-gray-400 p-1">
+                  Reduced 60% deployment time by automating deployment
+                  processes, data source creation, cronjobs, and code commits
+                  using Python and shell scripts in sync with Jenkins.
+                </p>
+              </li>
+            </section>
             <li className="mb-7 ms-4">
               <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">

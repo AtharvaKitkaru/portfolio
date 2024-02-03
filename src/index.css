@@ -3,11 +3,11 @@
 @tailwind utilities;
 @layer components {
   .page-heading {
-    @apply font-bold text-3xl text-black w-fit p-3 m-auto uppercase;
+    @apply font-bold text-4xl md:text-5xl  text-slate-800 dark:text-white w-fit p-3 m-auto;
   }
 
-  .page{
-    @apply min-h-screen w-full
+  .page {
+    @apply min-h-screen w-full;
   }
 }
 body {

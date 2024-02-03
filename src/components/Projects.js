@@ -229,10 +229,10 @@ function Projects() {
               className="m-3 min-w-[75vw] min-h-[35vh] md:min-w-[30vw] bg-slate-400 dark:bg-gray-700 p-2 rounded-lg transition-transform hover:scale-105 hover:cursor-pointer focus-visible:scale-105 focus:scale-105"
             >
               <a href={project.link}>
-                <div className="text-white font-bold text-md uppercase p-1 font-cubano">
+                <div className="text-white font-bold text-md uppercase p-1 font-poppins">
                   {project.title}
                 </div>
-                <div className="text-slate-200 text-sm p-2 font-sofia text-ellipsis">
+                <div className="text-slate-200 text-sm p-2 font-poppins text-ellipsis">
                   {project.description}
                 </div>
                 <div className="flex flex-wrap p-2">

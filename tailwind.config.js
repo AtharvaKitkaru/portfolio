@@ -12,6 +12,7 @@ module.exports = {
       fontFamily: {
         cubano: "cubano,sans-serif",
         sofia: "sofia-pro,sans-serif",
+        poppins: "poppins,sans-serif",
       },
     },
   },
