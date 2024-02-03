@@ -1,7 +1,7 @@
 // Certifications.js
 import React, { useState } from "react";
 import Modal from "react-modal";
-import { animate, easeIn, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Reveal from "../common/Reveal";
 import awsImage from "../assets/aws.png";
 import gkeImage from "../assets/gke.png";
@@ -108,7 +108,7 @@ const Certifications = () => {
             <iframe
               src={selectedCertification.pdfLink}
               title={selectedCertification.name}
-              className="w-full min-h-[50vh] rounded-md"
+              className="w-full h-[600px] md:min-h-[50vh] rounded-md"
             ></iframe>
             <div className="pt-4 text-sm ">
               {selectedCertification.description}
