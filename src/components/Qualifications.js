@@ -15,8 +15,8 @@ function Qualifications() {
   //   setToggleExperience((prevState) => !prevState);
   // };
   return (
-    <div id="qualifications" className="page">
-      <div className="header flex flex-row justify-center align-middle mt-[1rem] mb-[1rem] md:mt-[10rem] md:mb-[5rem]">
+    <div id="qualifications" className="page py-10">
+      <div className="header flex flex-row justify-center align-middle  mb-[1rem] md:mt-[10rem] md:mb-[3rem]">
         <div className="page-heading text-black dark:text-white">
           <Reveal>
             {" "}
@@ -27,7 +27,7 @@ function Qualifications() {
       </div>
 
       <div className="flex flex-col md:flex-row justify-center align-middle">
-        <div className=" flex-column justify-center align-middle mt-4 md:ml-12 pl-5 pt-4">
+        <div className=" flex-column justify-center align-middle mt-4 pl-5 pt-4">
           <div
             className="flex flex-row text-slate-500 dark:text-white text-xl font-bold mb-5 w-2/3"
             // onClick={handleToggleEducation}
@@ -162,9 +162,9 @@ function Qualifications() {
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
                 <Reveal>May 2020 – Aug 2020</Reveal>
               </time>
-              <a href="https://github.com/AtharvaKitkaru/ProjectPortal.git">
-                <h3 className="text-md text-gray-500 dark:text-white font-semibold uppercase flex align-middle">
-                  <Reveal>
+              <Reveal>
+                <a href="https://github.com/AtharvaKitkaru/ProjectPortal.git">
+                  <h3 className="text-md text-gray-500 dark:text-white font-semibold uppercase flex align-middle">
                     <div>
                       {" "}
                       K.J.S.C.E, IT Department | Software Engineering Intern
@@ -175,9 +175,9 @@ function Qualifications() {
                         icon={faUpRightFromSquare}
                       />
                     </div>
-                  </Reveal>
-                </h3>
-              </a>
+                  </h3>
+                </a>
+              </Reveal>
               <p className="text-sm font-normal text-gray-400 p-1">
                 <Reveal>
                   Crafted a comprehensive Web Portal, powered by ReactJS,
@@ -191,9 +191,9 @@ function Qualifications() {
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
                 <Reveal>May 2020 – Aug 2020</Reveal>
               </time>
-              <a href="https://github.com/SIH2020sgss/">
-                <h3 className="text-md text-gray-500 dark:text-white font-semibold uppercase flex align-middle">
-                  <Reveal>
+              <Reveal>
+                <a href="https://github.com/SIH2020sgss/">
+                  <h3 className="text-md text-gray-500 dark:text-white font-semibold uppercase flex align-middle">
                     <div>
                       K.J.S.C.E, IT Department | Software Engineering Intern
                     </div>
@@ -203,9 +203,9 @@ function Qualifications() {
                         icon={faUpRightFromSquare}
                       />
                     </div>
-                  </Reveal>
-                </h3>
-              </a>
+                  </h3>
+                </a>
+              </Reveal>
               <p className="text-sm font-normal text-gray-400 p-1">
                 <Reveal>
                   Created a Internship Portal for IT Department which helps

@@ -1,8 +1,14 @@
-add publications
 add certifications
-add about
+    create the grid layout
+    create the card layout
+    find modal
+    apply modal
+    apply animations
+    check mobile friendliness
+    check dark mode friendliness
+add publications
 add footer for contact details
-add animations.
-change colour theme.
-fix mobile view: qualifications section, about section
 add image to left of skills section
+fix animation overlapping header
+fix overall padding
+add modal to projects

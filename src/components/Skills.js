@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Reveal from "../common/Reveal";
 
 const skillsData = {
   frontend: [
@@ -53,8 +54,17 @@ function Skills() {
   };
 
   return (
-    <div id="skills" className="page dark:bg-gray-800">
-      <div className="page-heading dark:bg-blue-500 my-12">Skills</div>
+    <div id="skills" className="page  py-10">
+      <div className="header flex flex-row-reverse justify-center align-middle mt-[1rem] mb-[1rem] md:mt-[10rem] md:mb-[5rem]">
+        <div className="page-heading text-black dark:text-white">
+          <Reveal>
+            {" "}
+            Skills<span className="text-red-500">.</span>
+          </Reveal>
+        </div>
+        <div className="w-full h-[1px] bg-slate-600 dark:bg-slate-300 m-auto opacity-30"></div>
+      </div>
+
       <div className="max-w-xl mx-auto">
         {Object.entries(skillsData).map(([category, skills], index) => (
           <div key={category} className="mb-4">
@@ -62,7 +72,7 @@ function Skills() {
               className={`m-auto cursor-pointer w-[90vw] md:w-auto flex justify-between items-center py-3 px-4 ${
                 activeAccordion === index
                   ? "bg-indigo-500 text-white"
-                  : "bg-gray-300 dark:bg-gray-600 text-gray-800"
+                  : "bg-gray-300 dark:bg-gray-500 text-gray-800"
               } rounded-md transition duration-300 ease-in-out`}
               onClick={() => handleAccordionClick(index)}
             >

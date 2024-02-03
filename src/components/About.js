@@ -5,8 +5,11 @@ import Reveal from "../common/Reveal";
 import { HashLink } from "react-router-hash-link";
 function About() {
   return (
-    <div id="about" className="w-full min-h-screen flex flex-col p-0 md:mt-20">
-      <div className="header flex flex-row-reverse justify-center align-middle ">
+    <div
+      id="about"
+      className="w-full min-h-screen flex flex-col py-10 md:mt-20"
+    >
+      <div className="header flex flex-row-reverse justify-center align-middle">
         <div className="page-heading text-black dark:text-white">
           <Reveal>
             {" "}

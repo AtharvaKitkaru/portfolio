@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import Reveal from "../common/Reveal";
 const tags = {
   reactjs: (
     <div className="text-gray-600 bg-green-300 text-xs p-1 rounded-md">
@@ -218,8 +219,16 @@ const projects = {
 
 function Projects() {
   return (
-    <div id="projects" className="page">
-      <div className="page-heading dark:bg-blue-500 my-12">Projects</div>
+    <div id="projects" className="page py-10">
+      <div className="header flex flex-row justify-center align-middle">
+        <div className="page-heading text-black dark:text-white">
+          <Reveal>
+            {" "}
+            Projects<span className="text-red-500">.</span>
+          </Reveal>
+        </div>
+        <div className="w-full h-[1px] bg-slate-600 dark:bg-slate-300 m-auto opacity-30"></div>
+      </div>
       <div className="m-auto grid grid-flow-col grid-rows-1  align-middle h-[60vh] w-[90vw] overflow-x-scroll custom-scrollbar">
         {Object.keys(projects).map((projectId) => {
           const project = projects[projectId];
