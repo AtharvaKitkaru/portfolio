@@ -108,7 +108,7 @@ const Certifications = () => {
             <iframe
               src={selectedCertification.pdfLink}
               title={selectedCertification.name}
-              className="w-full h-[600px] md:min-h-[50vh] rounded-md"
+              className="w-full min-h-[50vh] rounded-md"
             ></iframe>
             <div className="pt-4 text-sm ">
               {selectedCertification.description}
