@@ -239,18 +239,20 @@ function Projects() {
             >
               <a href={project.link}>
                 <div className="text-white font-bold text-md uppercase p-1 font-poppins">
-                  {project.title}
+                  <Reveal>{project.title}</Reveal>
                 </div>
                 <div className="text-slate-200 text-sm p-2 font-poppins text-ellipsis">
-                  {project.description}
+                  <Reveal>{project.description}</Reveal>
                 </div>
+                  <Reveal>
                 <div className="flex flex-wrap p-2">
-                  {project.tags.map((tag) => (
-                    <div key={tag} className="pr-2 pt-2">
-                      {tags[tag]}
-                    </div>
-                  ))}
+                    {project.tags.map((tag) => (
+                      <div key={tag} className="pr-2 pt-2">
+                        {tags[tag]}
+                      </div>
+                    ))}
                 </div>
+                  </Reveal>
               </a>
             </div>
           );

@@ -7,6 +7,8 @@ import Certifications from "./components/Certifications.js";
 import Projects from "./components/Projects.js";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Publications from "./components/Publications.js";
+import Contact from "./components/Contact.js";
+
 function App() {
   return (
     <Router>
@@ -28,6 +30,7 @@ function App() {
           <Projects />
           <Publications />
           <Certifications />
+          <Contact />
         </div>
       </div>
     </Router>

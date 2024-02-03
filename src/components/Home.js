@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "../common/Reveal";
+import { easeIn, motion } from "framer-motion";
 
 function Home() {
   return (
@@ -19,12 +20,24 @@ function Home() {
           </Reveal>
         </div>
       </div>
-      <div
+      <motion.div
         className="flex-1 m-auto bg-no-repeat bg-fill bg-cover w-full h-1/3 md:h-screen flex justify-center align-middle"
         style={{ backgroundImage: "url('/blob.png')" }}
+        initial={{
+          opacity: 0,
+          y: 10,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 2,
+            ease: easeIn,
+          },
+        }}
       >
         <img className="m-auto w-2/3 h-2/3" src="atharva.png" alt="Atharva" />
-      </div>
+      </motion.div>
     </div>
   );
 }

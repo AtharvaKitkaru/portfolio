@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Reveal from "../common/Reveal";
+import skillsSvg from "../assets/skills.jpg";
 
 const skillsData = {
   frontend: [
@@ -64,45 +65,49 @@ function Skills() {
         </div>
         <div className="w-full h-[1px] bg-slate-600 dark:bg-slate-300 m-auto opacity-30"></div>
       </div>
-
-      <div className="max-w-xl mx-auto">
-        {Object.entries(skillsData).map(([category, skills], index) => (
-          <div key={category} className="mb-4">
-            <div
-              className={`m-auto cursor-pointer w-[90vw] md:w-auto flex justify-between items-center py-3 px-4 ${
-                activeAccordion === index
-                  ? "bg-indigo-500 text-white"
-                  : "bg-gray-300 dark:bg-gray-500 text-gray-800"
-              } rounded-md transition duration-300 ease-in-out`}
-              onClick={() => handleAccordionClick(index)}
-            >
-              <div className="text-xl font-bold uppercase">
-                {category.replace(/([A-Z])/g, " $1").trim()}
-              </div>
-              <div className="ml-2">
-                {activeAccordion === index ? "-" : "+"}
-              </div>
-            </div>
-            {activeAccordion === index && (
-              <div className="m-auto w-[90vw] md:w-auto bg-white dark:bg-gray-700 px-4 pt-2 pb-4 rounded-b-md transition duration-300 ease-in-out">
-                <div className="flex flex-wrap">
-                  {skills.map((skill, skillIndex) => (
-                    <div
-                      key={skillIndex}
-                      className={`${
-                        activeAccordion === index
-                          ? "bg-indigo-500 text-white"
-                          : "bg-gray-300 dark:bg-gray-600 text-gray-800"
-                      } px-2 py-1 m-1 rounded-full text-sm`}
-                    >
-                      {skill}
-                    </div>
-                  ))}
+      <div className="flex flex-row">
+        <div className="flex-1 ">
+          <img className={skillsSvg} alt="skills" />
+        </div>
+        <div className="max-w-xl mx-auto md:flex-1">
+          {Object.entries(skillsData).map(([category, skills], index) => (
+            <div key={category} className="mb-4">
+              <div
+                className={`m-auto cursor-pointer w-[90vw] md:w-auto flex justify-between items-center py-3 px-4 ${
+                  activeAccordion === index
+                    ? "bg-indigo-500 text-white"
+                    : "bg-gray-300 dark:bg-gray-500 text-gray-800"
+                } rounded-md transition duration-300 ease-in-out`}
+                onClick={() => handleAccordionClick(index)}
+              >
+                <div className="text-xl font-bold uppercase">
+                  {category.replace(/([A-Z])/g, " $1").trim()}
+                </div>
+                <div className="ml-2">
+                  {activeAccordion === index ? "-" : "+"}
                 </div>
               </div>
-            )}
-          </div>
-        ))}
+              {activeAccordion === index && (
+                <div className="m-auto w-[90vw] md:w-auto bg-white dark:bg-gray-700 px-4 pt-2 pb-4 rounded-b-md transition duration-300 ease-in-out">
+                  <div className="flex flex-wrap">
+                    {skills.map((skill, skillIndex) => (
+                      <div
+                        key={skillIndex}
+                        className={`${
+                          activeAccordion === index
+                            ? "bg-indigo-500 text-white"
+                            : "bg-gray-300 dark:bg-gray-600 text-gray-800"
+                        } px-2 py-1 m-1 rounded-full text-sm`}
+                      >
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

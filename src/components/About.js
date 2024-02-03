@@ -3,6 +3,8 @@ import blobpng from "../assets/blob-2.png";
 import atharva2 from "../assets/atharva-2.png";
 import Reveal from "../common/Reveal";
 import { HashLink } from "react-router-hash-link";
+import { easeIn, motion } from "framer-motion";
+
 function About() {
   return (
     <div
@@ -19,16 +21,28 @@ function About() {
         <div className="w-full h-[1px] bg-slate-600 dark:bg-slate-300 m-auto opacity-30"></div>
       </div>
       <div className="flex flex-col md:flex-row justify-start align-top">
-        <div
+        <motion.div
           className="flex-1 m-auto bg-no-repeat bg-fill bg-cover md:h-screen flex justify-center items-center"
           style={{ backgroundImage: `url(${blobpng})` }}
+          initial={{
+            opacity: 0,
+            y: 5,
+          }}
+          whileInView={{
+            y: 10,
+            opacity: 1,
+            transition: {
+              duration: 2,
+              ease: easeIn,
+            },
+          }}
         >
           <img
             className="m-auto w-2/3 h-auto md:w-full md:h-2/3"
             src={atharva2}
             alt="Atharva"
           />
-        </div>
+        </motion.div>
 
         <div className="flex-1 mt-5 md:m-auto dark:text-white ">
           <div className="font-poppins">
@@ -81,6 +95,17 @@ function About() {
                 . I also love to play Badminton.
               </p>
             </Reveal>
+            <br />
+            <HashLink to="#contact">
+              <motion.div
+                className=" bg-orange-500 text-white p-3 rounded-md w-fit"
+                whileHover={{
+                  scale: 1.05,
+                }}
+              >
+                Let's Connect
+              </motion.div>
+            </HashLink>
           </div>
         </div>
       </div>
