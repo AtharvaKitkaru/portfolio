@@ -27,20 +27,20 @@ function Reveal({ children }) {
         }}
         initial="hidden"
         animate={textControls}
-        transition={{ duration: 0.6, delay: 0.7 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
       >
         {children}
       </motion.div>
 
       <motion.div
-        className="bg-orange-400 rounded-md absolute top-0 bottom-0 left-0 right-0 z-20"
+        className="bg-orange-400 rounded-md absolute p-0 m-0 top-0 bottom-0 left-0 right-0 z-10"
         variants={{
           hidden: { left: "0%" },
           visible: { left: "100%" },
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: 0.6, ease: easeIn, delay: 0.5 }}
+        transition={{ duration: 0.5, ease: easeIn, delay: 0.5 }}
       ></motion.div>
     </div>
   );
