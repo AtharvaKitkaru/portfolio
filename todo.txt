@@ -1,4 +1,5 @@
-add image to left of skills section
 fix animation overlapping header
 fix overall padding
 add modal to projects
+add up animation to cards
+fix modal on mobile
