@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Reveal from "../common/Reveal";
-import skillsSvg from "../assets/skills.jpg";
+import skillsSvg from "../assets/skills.png";
 
 const skillsData = {
   frontend: [
@@ -65,9 +65,9 @@ function Skills() {
         </div>
         <div className="w-full h-[1px] bg-slate-600 dark:bg-slate-300 m-auto opacity-30"></div>
       </div>
-      <div className="flex flex-row">
-        <div className="flex-1 ">
-          <img className={skillsSvg} alt="skills" />
+      <div className="md:flex md:flex-row">
+        <div className="md:flex-1 md:p-0">
+          <img src={skillsSvg} className="" alt="skills" />
         </div>
         <div className="max-w-xl mx-auto md:flex-1">
           {Object.entries(skillsData).map(([category, skills], index) => (
