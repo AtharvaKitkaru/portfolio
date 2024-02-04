@@ -104,6 +104,7 @@ function Header() {
           open: { width: "100vw", height: "100vh", fontSize: "1.2rem" },
           closed: { width: 0, height: 0, fontSize: 0 },
         }}
+        initial="closed"
         animate={isMobileMenuOpen ? "open" : "closed"}
         exit={{
           width: 0,
