@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 function Contact() {
   return (
     <div className="">
-      <div className="page-heading text-black mt-20 dark:text-white" id="contact">
+      <div
+        className="page-heading text-black mt-20 dark:text-white"
+        id="contact"
+      >
         <Reveal>
           {" "}
           Contact<span className="text-red-500">.</span>

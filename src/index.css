@@ -10,7 +10,15 @@
     @apply min-h-screen w-full;
   }
 }
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -20,6 +28,11 @@ body {
   scroll-behavior: smooth;
 }
 
+body > div {
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

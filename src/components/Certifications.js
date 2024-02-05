@@ -1,7 +1,6 @@
 // Certifications.js
 import React, { useState } from "react";
-import Modal from "react-modal";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence, easeIn } from "framer-motion";
 import Reveal from "../common/Reveal";
 import awsImage from "../assets/aws.png";
 import gkeImage from "../assets/gke.png";
@@ -94,34 +93,51 @@ const Certifications = () => {
           </motion.div>
         ))}
       </div>
-
-      <Modal
-        className="modal text-black dark:text-white bg-white dark:bg-gray-500 rounded-md p-4 m-auto mt-20 w-[90vw] min-h-[80vh] md:w-2/3 "
-        isOpen={isCertificationsModalOpen}
-        onRequestClose={closeCertificationsModal}
-      >
-        {selectedCertification && (
-          <div className="font-poppins">
-            <h2 className="text-lg font-bold mb-4 uppercase">
-              {selectedCertification.name}
-            </h2>
-            <iframe
-              src={selectedCertification.pdfLink}
-              title={selectedCertification.name}
-              className="w-full min-h-[50vh] rounded-md"
-            ></iframe>
-            <div className="pt-4 text-sm ">
-              {selectedCertification.description}
-            </div>
-            <button
-              className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
-              onClick={closeCertificationsModal}
+      <AnimatePresence>
+        {isCertificationsModalOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setCertificationsModalOpen(false)}
+            className="bg-slate-900/20 backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer"
+          >
+            <motion.div
+              initial={{ scale: 0, rotate: "12.5deg" }}
+              animate={{ scale: 1, rotate: "0deg" }}
+              exit={{ scale: 0, rotate: "0deg" }}
+              transition={{ duration: 0.5, ease: easeIn }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-gradient-to-br from-slate-800 to-slate-500 text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
             >
-              Close
-            </button>
-          </div>
+              <div className="relative z-10">
+                <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl text-indigo-600 grid place-items-center mx-auto"></div>
+
+                <h3 className="text-3xl font-bold text-center mb-2">
+                  {selectedCertification.name}
+                </h3>
+                <iframe
+                  src={selectedCertification.pdfLink}
+                  title={selectedCertification.name}
+                  className="w-full min-h-[50vh] rounded-md"
+                ></iframe>
+                <p className="text-center mb-6">
+                  {selectedCertification.description}
+                </p>
+
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setCertificationsModalOpen(false)}
+                    className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold w-full py-2 rounded"
+                  >
+                    Understood!
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
         )}
-      </Modal>
+      </AnimatePresence>
     </div>
   );
 };

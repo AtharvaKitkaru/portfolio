@@ -17,7 +17,7 @@ function App() {
         {/* <Route path="/#section2" component={Projects} /> */}
         {/* Add more Switch for other sections if needed */}
       </Routes>
-      <div className="App font-poppins text-pretty text-wrap">
+      <div className="App font-poppins text-wrap">
         <div className="sticky top-0 z-10 bg-white dark:bg-slate-100 ">
           <Header />
         </div>
