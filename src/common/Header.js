@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import menupng from "../assets/three-lines.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { easeIn, easeInOut, easeOut, motion, useScroll } from "framer-motion";
+import {
+  faCircle,
+  faLightbulb,
+  faMoon,
+  faSun,
+} from "@fortawesome/free-solid-svg-icons";
+import { easeInOut, easeOut, motion } from "framer-motion";
 
 function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,10 +37,10 @@ function Header() {
 
   return (
     <div>
-      <motion.div className="header w-full flex flex-row md:space-x-4 justify-between md:p-3 md:pr-10 relative m-0 z-40 ">
+      <motion.div className="header w-full flex flex-row  items-center md:p-3 md:pr-10 relative m-0 z-40 ">
         {/* Toggle button for mobile */}
 
-        <motion.div className="p-1">
+        <motion.div className="p-1 flex justify-center items-center">
           <button
             className="md:hidden w-10 transition-opacity"
             onClick={toggleMobileMenu}
@@ -48,55 +53,95 @@ function Header() {
         <div className={`hidden md:flex space-x-4 w-screen md:w-auto}`}>
           {/* Other menu items */}
           {/* Add onClick handlers to close the mobile menu */}
-          <div>
+          <motion.div
+            whileHover={{ backgroundColor: "rgb(203 213 225)", scale: 1.03 }}
+            className="p-1 rounded-lg"
+          >
             <a href="/">Home</a>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ backgroundColor: "rgb(203 213 225)", scale: 1.03 }}
+            className="p-1 rounded-lg"
+          >
             <a href="#about">About</a>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ backgroundColor: "rgb(203 213 225)", scale: 1.03 }}
+            className="p-1 rounded-lg"
+          >
             <a href="#qualifications">Qualifications</a>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ backgroundColor: "rgb(203 213 225)", scale: 1.03 }}
+            className="p-1 rounded-lg"
+          >
             <a href="#skills">Skills</a>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ backgroundColor: "rgb(203 213 225)", scale: 1.03 }}
+            className="p-1 rounded-lg"
+          >
             <a href="#projects">Projects</a>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ backgroundColor: "rgb(203 213 225)", scale: 1.03 }}
+            className="p-1 rounded-lg"
+          >
             <a href="#publications">Publications</a>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ backgroundColor: "rgb(203 213 225)", scale: 1.03 }}
+            className="p-1 rounded-lg"
+          >
             <a href="#certifications">Certifications</a>
-          </div>
+          </motion.div>
         </div>
-
-        {/* Mobile menu */}
 
         {/* Dark mode toggle */}
-        <div className="flex items-center justify-center p-1">
-          <button onClick={toggleDarkMode} className="w-10">
-            {isDarkMode ? (
-              <FontAwesomeIcon
-                icon={faLightbulb}
-                className="cursor-pointer outline-none w-10 h-5"
-                style={{
-                  "--fa-primary-color": "#1e1f1f",
-                  "--fa-secondary-color": "#d0c00b",
-                }}
-              />
-            ) : (
-              <FontAwesomeIcon
-                icon={faMoon}
-                className="cursor-pointer outline-none w-10 h-5"
-                style={{
-                  "--fa-primary-color": "#1e1f1f",
-                  "--fa-secondary-color": "#d0c00b",
-                }}
-              />
-            )}
-          </button>
-        </div>
+        <motion.div
+          className="rounded-xl flex items-center m-auto cursor-pointer max-w-[4.5rem] p-1 right-3 absolute"
+          onClick={toggleDarkMode}
+          animate={{
+            backgroundImage: isDarkMode
+              ? "linear-gradient(rgb(79, 70, 229), rgb(129, 140, 248))"
+              : "linear-gradient(rgb(59, 130, 246), rgb(125, 211, 252))",
+          }}
+        >
+          <motion.div
+            // initial={{
+            //   x: isDarkMode ? "90%" : "10%",
+
+            // }}
+            animate={{
+              x: isDarkMode ? "90%" : "-10%",
+              opacity: isDarkMode ? 0 : 100,
+            }}
+          >
+            <FontAwesomeIcon
+              icon={faCircle}
+              className="cursor-pointer outline-none w-10  text-orange-300"
+              style={{
+                "--fa-primary-color": "#1e1f1f",
+                "--fa-secondary-color": "#d0c00b",
+              }}
+            />
+          </motion.div>
+          <motion.div
+            animate={{
+              x: isDarkMode ? "-10%" : "-90%",
+              opacity: isDarkMode ? 100 : 0,
+            }}
+          >
+            <FontAwesomeIcon
+              icon={faMoon}
+              className="cursor-pointer outline-none w-10  text-slate-200"
+              style={{
+                "--fa-primary-color": "#1e1f1f",
+                "--fa-secondary-color": "#d0c00b",
+              }}
+            />
+          </motion.div>
+        </motion.div>
       </motion.div>
       <motion.div
         className="flex flex-col space-y-5 space-x-3 z-50 font-medium"

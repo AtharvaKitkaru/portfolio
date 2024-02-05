@@ -21,7 +21,7 @@ function Home() {
         </div>
       </div>
       <motion.div
-        className="flex-1 m-auto bg-no-repeat bg-fill bg-cover w-full h-1/3 md:h-screen flex justify-center align-middle"
+        className="flex-1 m-auto bg-no-repeat bg-fill bg-cover bg-center w-full h-1/3 md:h-screen flex justify-center align-middle"
         style={{ backgroundImage: "url('/blob.png')" }}
         initial={{
           opacity: 0,

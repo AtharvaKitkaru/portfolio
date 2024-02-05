@@ -22,7 +22,7 @@ function About() {
       </div>
       <div className="flex flex-col md:flex-row justify-start align-top">
         <motion.div
-          className="flex-1 m-auto bg-no-repeat bg-fill bg-cover md:h-screen flex justify-center items-center"
+          className="flex-1 m-auto bg-no-repeat bg-fill bg-cover bg-center  md:h-screen flex justify-center items-center"
           style={{ backgroundImage: `url(${blobpng})` }}
           initial={{
             opacity: 0,

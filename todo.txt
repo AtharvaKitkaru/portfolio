@@ -1,5 +1,9 @@
-fix animation overlapping header
+fix image sizing and animations
+fix modal on mobile
 fix overall padding
 add modal to projects
 add up animation to cards
-fix modal on mobile
+revamp project cards
+revamp qualification sections maybe
+add styling to mobile navbar
+add accordion animattion

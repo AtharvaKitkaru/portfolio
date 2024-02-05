@@ -9,7 +9,7 @@ function Reveal({ children }) {
   const inView = useInView(ref, { once: true });
   useEffect(() => {
     const loadText = async () => {
-      console.log(inView);
+
       if (inView) {
         slideControls.start("visible");
         textControls.start("visible");
