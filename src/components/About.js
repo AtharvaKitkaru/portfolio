@@ -26,13 +26,13 @@ function About() {
           style={{ backgroundImage: `url(${blobpng})` }}
           initial={{
             opacity: 0,
-            y: 5,
+            y: 50,
           }}
           whileInView={{
-            y: 10,
+            y: 0,
             opacity: 1,
             transition: {
-              duration: 1,
+              duration: 2,
               ease: easeIn,
             },
           }}
