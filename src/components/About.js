@@ -22,7 +22,7 @@ function About() {
       </div>
       <div className="flex flex-col md:flex-row justify-start align-top">
         <motion.div
-          className="flex-1 m-auto bg-no-repeat bg-fill bg-cover bg-center  md:h-screen flex justify-center items-center"
+          className="flex-1 m-auto bg-no-repeat bg-fill bg-cover bg-center min-w-[80vw] min-h-[40vh]  md:min-w-[50vw]  md:h-screen flex justify-center items-center"
           style={{ backgroundImage: `url(${blobpng})` }}
           initial={{
             opacity: 0,
@@ -32,16 +32,12 @@ function About() {
             y: 10,
             opacity: 1,
             transition: {
-              duration: 2,
+              duration: 1,
               ease: easeIn,
             },
           }}
         >
-          <img
-            className="m-auto w-2/3 h-auto md:w-full md:h-2/3"
-            src={atharva2}
-            alt="Atharva"
-          />
+          <img className="m-auto w-2/4 h-2/4 " src={atharva2} alt="Atharva" />
         </motion.div>
 
         <div className="flex-1 mt-5 md:m-auto dark:text-white ">

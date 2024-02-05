@@ -21,7 +21,7 @@ function Home() {
         </div>
       </div>
       <motion.div
-        className="flex-1 m-auto bg-no-repeat bg-fill bg-cover bg-center w-full h-1/3 md:h-screen flex justify-center align-middle"
+        className="flex-1 m-auto bg-no-repeat bg-fill bg-contain bg-center min-w-[80vw] min-h-[40vh] md:min-w-[40vw]  md:h-screen flex justify-center align-middle"
         style={{ backgroundImage: "url('/blob.png')" }}
         initial={{
           opacity: 0,
@@ -31,12 +31,12 @@ function Home() {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 2,
+            duration: 1,
             ease: easeIn,
           },
         }}
       >
-        <img className="m-auto w-2/3 h-2/3" src="atharva.png" alt="Atharva" />
+        <img className="m-auto  w-2/4 h-2/4 " src="atharva.png" alt="Atharva" />
       </motion.div>
     </div>
   );
