@@ -60,37 +60,55 @@ const Certifications = () => {
       </div>
       <div className="grid grid-flow-row  md:grid-cols-3 gap-4 mt-10">
         {certificationsData.map((certification, index) => (
-          <motion.div
-            key={index}
-            className="bg-gray-300 dark:bg-gray-700  rounded-md p-5 backdrop-blur-md cursor-pointer"
-            whileHover={{
-              scale: 1.05,
-            }}
-            onClick={() => openCertificationsModal(certification)}
-          >
-            <motion.div className="mb-4">
-              <img
-                src={certification.image}
-                className="rounded-md w-full h-full"
-                alt="certificate"
-              />
-            </motion.div>
-            <div className="text-black dark:text-white font-semibold text-lg uppercase">
-              <Reveal> {certification.name}</Reveal>
-            </div>
-            <div className="text-slate-500 dark:text-slate-300 text-sm  my-4 ">
-              <Reveal>
-                <div className="line-clamp-3">{certification.description}</div>
-              </Reveal>
-            </div>
-
-            <div
-              className="text-blue-500 dark:text-blue-300 text-sm"
+          <AnimatePresence>
+            <motion.div
+              key={index}
+              className="bg-gray-300 dark:bg-gray-700  rounded-md p-5 backdrop-blur-md cursor-pointer"
+              initial={{
+                y: 75,
+              }}
+              whileInView={{
+                y: 0,
+              }}
+              exit={{
+                y: 75,
+              }}
+              transition={{
+                type: "spring",
+                duration: 2.5,
+                ease: easeIn,
+              }}
+              whileHover={{
+                scale: 1.05,
+              }}
               onClick={() => openCertificationsModal(certification)}
             >
-              <Reveal>Read more</Reveal>
-            </div>
-          </motion.div>
+              <motion.div className="mb-4">
+                <img
+                  src={certification.image}
+                  className="rounded-md w-full h-full"
+                  alt="certificate"
+                />
+              </motion.div>
+              <div className="text-black dark:text-white font-semibold text-lg uppercase">
+                <Reveal> {certification.name}</Reveal>
+              </div>
+              <div className="text-slate-500 dark:text-slate-300 text-sm  my-4 ">
+                <Reveal>
+                  <div className="line-clamp-3">
+                    {certification.description}
+                  </div>
+                </Reveal>
+              </div>
+
+              <div
+                className="text-blue-500 dark:text-blue-300 text-sm"
+                onClick={() => openCertificationsModal(certification)}
+              >
+                <Reveal>Read more</Reveal>
+              </div>
+            </motion.div>
+          </AnimatePresence>
         ))}
       </div>
       <AnimatePresence>

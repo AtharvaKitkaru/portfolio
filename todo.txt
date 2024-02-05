@@ -1,6 +1,5 @@
-add modal to projects
-add up animation to cards
 revamp project cards
+add modal to projects
 revamp qualification sections maybe
 add styling to mobile navbar
 add accordion animation

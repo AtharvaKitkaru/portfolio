@@ -55,6 +55,17 @@ const Publications = () => {
           <motion.div
             key={index}
             className="bg-gray-300 dark:bg-gray-700  rounded-md p-5 backdrop-blur-md cursor-pointer"
+            initial={{
+              y: 75,
+            }}
+            whileInView={{
+              y: 0,
+            }}
+            transition={{
+              type: "spring",
+              duration: 2.5,
+              ease: easeIn,
+            }}
             whileHover={{
               scale: 1.05,
             }}
