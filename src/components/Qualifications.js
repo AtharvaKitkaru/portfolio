@@ -4,16 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Reveal from "../common/Reveal";
 
 function Qualifications() {
-  const [toggleEducation, setToggleEducation] = useState(true);
-  const [toggleExperience, setToggleExperience] = useState(true);
-
-  // const handleToggleEducation = () => {
-  //   setToggleEducation((prevState) => !prevState);
-  // };
-
-  // const handleToggleExperience = () => {
-  //   setToggleExperience((prevState) => !prevState);
-  // };
   return (
     <div id="qualifications" className="page py-10">
       <div className="header flex flex-row justify-center align-middle  mb-[1rem] md:mt-[10rem] md:mb-[3rem]">
@@ -28,23 +18,13 @@ function Qualifications() {
 
       <div className="flex flex-col md:flex-row justify-center align-middle">
         <div className=" flex-column justify-center align-middle mt-4 pl-5 pt-4">
-          <div
-            className="flex flex-row text-slate-500 dark:text-white text-xl font-bold mb-5 w-2/3"
-            // onClick={handleToggleEducation}
-          >
+          <div className="flex flex-row text-slate-500 dark:text-white text-xl font-bold mb-5 w-2/3">
             <Reveal>
               <div>Education</div>
             </Reveal>
-            {/* <div className="ml-3"> */}
-            {/* <FontAwesomeIcon icon={faAngleDown} /> */}
-            {/* </div> */}
           </div>
 
-          <ol
-            className={`relative border-s border-gray-500 transition duration-300 ease-in-out ${
-              toggleEducation ? "" : "hidden"
-            }`}
-          >
+          <ol className="relative border-s border-gray-500 transition duration-300 ease-in-out">
             <li className="mb-7 ms-4">
               <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 ">
@@ -92,26 +72,17 @@ function Qualifications() {
             </li>
           </ol>
         </div>
-        <div
-          className="grow flex-column justify-center align-middle mt-4 md:ml-12 pl-5 pt-4"
-          // onClick={handleToggleExperience}
-        >
+        <div className="grow flex-column justify-center align-middle mt-4 md:ml-12 pl-5 pt-4">
           <div className="flex flex-row text-slate-500 dark:text-white text-xl font-bold mb-5">
             <div>
               <Reveal>Experience</Reveal>
             </div>
             <div>
-              <div className="ml-3">
-                {/* <FontAwesomeIcon icon={faAngleDown} /> */}
-              </div>
+              <div className="ml-3"></div>
             </div>
           </div>
 
-          <ol
-            className={`relative border-s border-gray-500 ${
-              toggleExperience ? "" : "hidden"
-            } `}
-          >
+          <ol className="relative border-s border-gray-500">
             <section id="ofss">
               <li className="mb-7 ms-4">
                 <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
