@@ -1,7 +1,4 @@
-revamp project cards
-add modal to projects
-hide header on scroll
-mention awards for ofss
-revamp qualification sections maybe
+hide header on scroll --on hold, scroll is not getting detected
 add styling to mobile navbar
-add accordion animation
+fix accordion animation
+change theme

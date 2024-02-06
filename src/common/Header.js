@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import menupng from "../assets/three-lines.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircle,
-  faLightbulb,
-  faMoon,
-  faSun,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircle, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { easeInOut, easeOut, motion } from "framer-motion";
 
 function Header() {
@@ -37,7 +32,7 @@ function Header() {
 
   return (
     <div>
-      <motion.div className="header w-full flex flex-row  items-center md:p-3 md:pr-10 relative m-0 z-40 ">
+      <motion.div className="header w-full flex flex-row  items-center md:p-3 md:pr-10 relative m-0 z-40 shadow-md">
         {/* Toggle button for mobile */}
 
         <motion.div className="p-1 flex justify-center items-center">

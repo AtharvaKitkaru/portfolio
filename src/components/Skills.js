@@ -91,12 +91,12 @@ function Skills() {
                     key="content"
                     className="m-auto w-[80vw] md:w-auto bg-white dark:bg-gray-700 px-4 pt-2 pb-4 rounded-b-md overflow-hidden"
                     initial={{ opacity: 0, maxHeight: 0 }}
-                    animate={{ opacity: 1, maxHeight: "6rem" }}
+                    animate={{ opacity: 1, maxHeight: "10rem" }}
                     exit={{ opacity: 0, height: 0, y: -20 }}
                     transition={{
-                      type: "tween",
-                      duration: 0.7,
-                      layout: "easeInOut",
+                      type: "spring",
+                      duration: 1,
+                      ease: "easeIn",
                     }}
                   >
                     <div className="flex flex-wrap">

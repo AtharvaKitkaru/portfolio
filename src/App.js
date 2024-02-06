@@ -8,22 +8,41 @@ import Projects from "./components/Projects.js";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Publications from "./components/Publications.js";
 import Contact from "./components/Contact.js";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { useState, useRef } from "react";
 
 function App() {
+  const ref = useRef(null);
+  const [navHidden, setNavHidden] = useState(false);
+  const { scrollY } = useScroll(ref);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    let previous = scrollY.getPrevious();
+
+    if (latest > previous && latest > 150) {
+      setNavHidden(true);
+    }
+  });
+
   return (
     <Router>
       <Routes>
         <Route path="/qualifcations/#ofss" />
-        {/* <Route path="/#section2" component={Projects} /> */}
-        {/* Add more Switch for other sections if needed */}
       </Routes>
-      <div className="App font-poppins text-wrap">
-        <div className="sticky top-0 z-10 bg-white dark:bg-slate-100 ">
+      <div className="App font-poppins text-wrap" ref={ref}>
+        <motion.div
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          }}
+          initial="visible"
+          animate={navHidden ? "hidden" : "visible"}
+          className="sticky top-0 z-10 bg-white dark:bg-slate-100 "
+        >
           <Header />
-        </div>
+        </motion.div>
         <div className="z-0 bg-slate-200 dark:bg-[#111] text-[#474748] dark:text-[#B2BECD] px-9">
           <Home />
-
           <About />
           <Qualifications />
           <Skills />

@@ -9,7 +9,6 @@ function Reveal({ children }) {
   const inView = useInView(ref, { once: true });
   useEffect(() => {
     const loadText = async () => {
-
       if (inView) {
         slideControls.start("visible");
         textControls.start("visible");
@@ -27,7 +26,7 @@ function Reveal({ children }) {
         }}
         initial="hidden"
         animate={textControls}
-        transition={{ duration: 0.5, delay: 0.7 }}
+        transition={{ duration: 0.4, delay: 0.7 }}
       >
         {children}
       </motion.div>
@@ -40,7 +39,7 @@ function Reveal({ children }) {
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: 0.5, ease: easeIn, delay: 0.5 }}
+        transition={{ duration: 0.4, ease: easeIn, delay: 0.5 }}
       ></motion.div>
     </div>
   );

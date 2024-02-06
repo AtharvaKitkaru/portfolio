@@ -155,6 +155,9 @@ function Qualifications() {
                     using Python and shell scripts in sync with Jenkins.
                   </Reveal>
                 </p>
+                <p className=" text-sm  font-normal text-gray-400 p-1">
+                  <Reveal> Received Dashing Debutant award</Reveal>
+                </p>
               </li>
             </section>
             <li className="mb-7 ms-4">

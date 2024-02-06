@@ -178,7 +178,7 @@ const projects = {
     gitlink:
       "https://github.com/AtharvaKitkaru/cardiovascular-disease-predictor.git",
     description:
-      "A ML powered web application that takes text and target as input, and detects the stance of the text w.r.t target. Developed around 60 models with different types of classifiers and neural networks, compared their results and provided them all to be used in the web-app.",
+      "Cardiovascular disease (CVD) Prediction model uses Python and popular data analysis libraries such as Pandas, Numpy, and Seaborn, takes input as patient's symptoms and utilizes the K-Nearest Neighbors algorithm to predict whether the person is likely to have cardiovascular disease or not.",
   },
   noteify: {
     title: "Noteify",
@@ -191,7 +191,7 @@ const projects = {
     title: "Spotify Clone",
     tags: ["php", "html", "css", "sql", "jquery"],
     gitlink: "https://github.com/AtharvaKitkaru/spotify-clone.git",
-    description: "A Spotify Clone",
+    description: "A clone of Spotify Web",
   },
   rsc: {
     title: "Retirement Savings Calculator",
@@ -235,12 +235,10 @@ const Projects = () => {
     if (sliderIndex < 0) {
       setSliderIndex((sliderIndex + 1) % Object.keys(projects).length);
     }
-    console.log(sliderIndex);
   };
 
   const translateRight = () => {
     setSliderIndex((sliderIndex - 1) % Object.keys(projects).length);
-    console.log(sliderIndex);
   };
   const [selectedProject, setSelectedProject] = useState(null);
   const [isProjectsModalOpen, setProjectsModalOpen] = useState(false);
