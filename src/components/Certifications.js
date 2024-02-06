@@ -42,13 +42,23 @@ const Certifications = () => {
     setCertificationsModalOpen(true);
   };
 
-  const closeCertificationsModal = () => {
-    setSelectedCertification(null);
-    setCertificationsModalOpen(false);
-  };
-
+ 
   return (
-    <div id="certifications" className="page py-10">
+    <motion.div
+      id="certifications"
+      className="page py-10"
+      initial={{
+        y: 75,
+      }}
+      exit={{
+        y: 75,
+      }}
+      transition={{
+        type: "spring",
+        duration: 2.5,
+        ease: easeIn,
+      }}
+    >
       <div className="header flex flex-row justify-center align-middle">
         <div className="page-heading text-black dark:text-white">
           <Reveal>
@@ -69,17 +79,19 @@ const Certifications = () => {
               }}
               whileInView={{
                 y: 0,
-              }}
-              exit={{
-                y: 75,
-              }}
-              transition={{
-                type: "spring",
-                duration: 2.5,
-                ease: easeIn,
+                transition: {
+                  type: "spring",
+                  duration: 2.5,
+                  ease: easeIn,
+                },
               }}
               whileHover={{
                 scale: 1.05,
+                transition: {
+                  type: "spring",
+                  duration: 0.3,
+                  ease: easeIn,
+                },
               }}
               onClick={() => openCertificationsModal(certification)}
             >
@@ -156,7 +168,7 @@ const Certifications = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 };
 

@@ -60,14 +60,19 @@ const Publications = () => {
             }}
             whileInView={{
               y: 0,
-            }}
-            transition={{
-              type: "spring",
-              duration: 2.5,
-              ease: easeIn,
+              transition: {
+                type: "spring",
+                duration: 2.5,
+                ease: easeIn,
+              },
             }}
             whileHover={{
               scale: 1.05,
+              transition: {
+                type: "spring",
+                duration: 0.3,
+                ease: easeIn,
+              },
             }}
             onClick={() => openPublicationsModal(publication)}
           >

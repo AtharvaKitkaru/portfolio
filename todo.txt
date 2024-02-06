@@ -1,5 +1,7 @@
 revamp project cards
 add modal to projects
+hide header on scroll
+mention awards for ofss
 revamp qualification sections maybe
 add styling to mobile navbar
 add accordion animation

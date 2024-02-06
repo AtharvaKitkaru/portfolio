@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <div className="">
+    <div className="w-full min-h-[60vh]">
       <div
-        className="page-heading text-black mt-20 dark:text-white"
+        className="page-heading text-black mt-20 dark:text-white "
         id="contact"
       >
         <Reveal>
