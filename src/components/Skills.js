@@ -75,7 +75,7 @@ function Skills() {
               <motion.div
                 className={`m-auto cursor-pointer w-[80vw] md:w-auto flex justify-between items-center py-3 px-4 ${
                   activeAccordion === index
-                    ? "bg-indigo-500 text-white"
+                    ? "bg-primary text-white"
                     : "bg-gray-300 dark:bg-gray-500 text-gray-800"
                 } rounded-md`}
                 onClick={() => handleAccordionClick(index)}
@@ -111,7 +111,7 @@ function Skills() {
                       key={skillIndex}
                       className={`${
                         activeAccordion === index
-                          ? "bg-indigo-500 text-white"
+                          ? "bg-primary text-white"
                           : "bg-gray-300 dark:bg-gray-600 text-gray-800"
                       } px-2 py-1 m-1 rounded-full text-sm`}
                     >

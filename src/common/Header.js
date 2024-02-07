@@ -90,6 +90,12 @@ function Header() {
           >
             <a href="#certifications">Certifications</a>
           </motion.div>
+          <motion.div
+            whileHover={{ backgroundColor: "rgb(203 213 225)", scale: 1.03 }}
+            className="p-1 rounded-lg"
+          >
+            <a href="#participations">Participations</a>
+          </motion.div>
         </div>
 
         {/* Dark mode toggle */}
@@ -180,6 +186,10 @@ function Header() {
         </div>
         <div onClick={closeMobileMenu}>
           <a href="#certifications">Certifications</a>
+        </div>
+
+        <div onClick={closeMobileMenu}>
+          <a href="#participations">Participations</a>
         </div>
       </motion.div>
     </div>

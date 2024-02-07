@@ -10,6 +10,7 @@ import Publications from "./components/Publications.js";
 import Contact from "./components/Contact.js";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useState, useRef } from "react";
+import Participations from "./components/Participations.js";
 
 function App() {
   const ref = useRef(null);
@@ -49,6 +50,7 @@ function App() {
           <Projects />
           <Publications />
           <Certifications />
+          <Participations />
           <Contact />
         </div>
       </div>
