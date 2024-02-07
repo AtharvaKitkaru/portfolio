@@ -93,12 +93,12 @@ function Skills() {
                   open: {
                     opacity: 1,
                     minHeight: "7.5rem",
-                    transition: { duration: 0.3 },
+                    transition: { duration: 0.5 },
                   },
                   closed: {
                     opacity: 0,
                     height: 0,
-                    transition: { duration: 0.3 },
+                    transition: { duration: 0.5 },
                   },
                 }}
                 initial="closed"
