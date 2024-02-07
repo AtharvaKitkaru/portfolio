@@ -136,7 +136,7 @@ const Publications = () => {
                 <div className="flex gap-2">
                   <button
                     onClick={() => setPublicationsModalOpen(false)}
-                    className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold w-full py-2 rounded"
+                    className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold w-full py-2 rounded-xl"
                   >
                     Understood!
                   </button>

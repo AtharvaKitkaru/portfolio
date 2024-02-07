@@ -83,7 +83,10 @@ function About() {
               <p>
                 Beyond work, I proudly contribute as a Professional Development
                 Board of Director at{" "}
-                <HashLink to="https://www.linkedin.com/company/rotaract-club-of-dombivli/?originalSubdomain=in">
+                <HashLink
+                  to="https://www.linkedin.com/company/rotaract-club-of-dombivli/?originalSubdomain=in"
+                  target="_blank"
+                >
                   <span className="text-orange-400 font-semibold">
                     Rotaract Club of Dombivali
                   </span>

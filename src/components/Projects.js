@@ -354,7 +354,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="text-white hover:opacity-90 transition-opacity bg-indigo-600 font-semibold w-full p-2 rounded">
+                    <button className="text-white hover:opacity-90 transition-opacity bg-indigo-600 font-semibold w-full p-2 rounded-xl">
                       Source code
                     </button>
                   </a>
@@ -364,7 +364,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="text-white hover:opacity-90 transition-opacity bg-indigo-600 font-semibold w-full p-2 rounded">
+                      <button className="text-white hover:opacity-90 transition-opacity bg-indigo-600 font-semibold w-full p-2 rounded-xl">
                         Live Project
                       </button>
                     </a>
@@ -373,7 +373,7 @@ const Projects = () => {
                 <div className="flex gap-2">
                   <button
                     onClick={() => setProjectsModalOpen(false)}
-                    className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold w-full py-2 rounded"
+                    className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold w-full py-2 rounded-xl"
                   >
                     Got it!
                   </button>

@@ -13,7 +13,7 @@ const certificationsData = [
     description:
       "This course teaches Kubernetes operations, deployment management, and GKE networking and storage.",
     pdfLink:
-      "https://file.notion.so/f/f/519ceb50-14d2-4065-964d-455f317f99e1/1aa663ea-cb86-46cd-a904-53280fb53e27/k8.pdf?id=a3162c1e-42e8-4aec-b15e-b62a5b6d12fa&table=block&spaceId=519ceb50-14d2-4065-964d-455f317f99e1&expirationTimestamp=1707048000000&signature=ETUMeJ9kebyNt51T_gTW6ERK5gyi7ilW9yJIITWItvI&downloadName=ARCHITECTING+WITH+GOOGLE+KUBERNETES+ENGINE+%3A+WORKLOADS+CERTIFICATE.pdf",
+      "https://file.notion.so/f/f/519ceb50-14d2-4065-964d-455f317f99e1/1aa663ea-cb86-46cd-a904-53280fb53e27/k8.pdf?id=a3162c1e-42e8-4aec-b15e-b62a5b6d12fa&table=block&spaceId=519ceb50-14d2-4065-964d-455f317f99e1&expirationTimestamp=1707400800000&signature=YZd6we3EAS_ILR5dmT8nADpPSxys0KHhmJE86UjYgJA&downloadName=ARCHITECTING+WITH+GOOGLE+KUBERNETES+ENGINE+%3A+WORKLOADS+CERTIFICATE.pdf",
   },
   {
     name: "AWS Cloud Techincal Essentials",
@@ -21,13 +21,15 @@ const certificationsData = [
     description:
       "This course introduces AWS services for compute, storage, and database, covers AWS security, IAM, Amazon EC2, AWS Lambda, Amazon ECS, Amazon RDS, Amazon DynamoDB, and Amazon S3. It also teaches how to monitor and optimize cloud infrastructure.",
     pdfLink:
-      "https://file.notion.so/f/f/519ceb50-14d2-4065-964d-455f317f99e1/7af30903-fbbd-4393-b4b0-999b418cbfc7/P3DXRPCAXWLL.pdf?id=e62116d3-3606-4c66-979e-0972a91c70e7&table=block&spaceId=519ceb50-14d2-4065-964d-455f317f99e1&expirationTimestamp=1707048000000&signature=h8RgXHs3vexE9sweN7nmbTtECKObecHu06t1-EuG0qM&downloadName=AWS+Cloud+Technical+Essentials+Certificate.pdf",
+      "https://file.notion.so/f/f/519ceb50-14d2-4065-964d-455f317f99e1/7af30903-fbbd-4393-b4b0-999b418cbfc7/P3DXRPCAXWLL.pdf?id=e62116d3-3606-4c66-979e-0972a91c70e7&table=block&spaceId=519ceb50-14d2-4065-964d-455f317f99e1&expirationTimestamp=1707400800000&signature=jtpyf_Er-S_Vnl1m5Bkqtfckc8rqusP_PbYVoUVLFLw&downloadName=AWS+Cloud+Technical+Essentials+Certificate.pdf",
   },
   {
     name: "Browser based models using Tensor flow",
     image: tfImage,
     description:
       "This course teaches you how to train and run ML models in any browser using TensorFlow.js. You’ll learn how to handle data in the browser, use pre-trained models, and build a computer vision project with a webcam.",
+    pdfLink:
+      "https://file.notion.so/f/f/519ceb50-14d2-4065-964d-455f317f99e1/7290ae6d-12ac-434c-9bec-dd979f1a58aa/AD8F46TM4GCE.pdf?id=66aca757-350e-497c-a114-70cbc9afb7af&table=block&spaceId=519ceb50-14d2-4065-964d-455f317f99e1&expirationTimestamp=1707400800000&signature=wcm4CwjdSaQvZtPcIKGImMLKBTRvliB9tGT69rFoa2Y&downloadName=Browser+based+models+using+Tensor+flow+Certificate.pdf",
   },
   // Add more certifications as needed
 ];
@@ -42,7 +44,6 @@ const Certifications = () => {
     setCertificationsModalOpen(true);
   };
 
- 
   return (
     <motion.div
       id="certifications"
@@ -138,7 +139,7 @@ const Certifications = () => {
               exit={{ scale: 0, rotate: "0deg" }}
               transition={{ duration: 0.5, ease: easeIn }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-gradient-to-br from-slate-800 to-slate-500 text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative"
+              className="bg-gradient-to-br from-copy to-copy-light text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative"
             >
               <div className="relative z-10">
                 <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl text-indigo-600 grid place-items-center mx-auto"></div>
@@ -158,7 +159,7 @@ const Certifications = () => {
                 <div className="flex gap-2">
                   <button
                     onClick={() => setCertificationsModalOpen(false)}
-                    className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold w-full py-2 rounded"
+                    className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold w-full py-2 rounded-xl"
                   >
                     Understood!
                   </button>

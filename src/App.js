@@ -41,7 +41,7 @@ function App() {
         >
           <Header />
         </motion.div>
-        <div className="z-0 bg-slate-200 dark:bg-[#111] text-[#474748] dark:text-[#B2BECD] px-9">
+        <div className="z-0 bg-background dark:bg-dark-background text-copy-light dark:text-dark-copy-lighter px-9">
           <Home />
           <About />
           <Qualifications />

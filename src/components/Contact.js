@@ -29,7 +29,7 @@ function Contact() {
           transition: { duration: 0.5, delay: 0.5 },
         }}
       >
-        <a href="https://www.linkedin.com/in/atharva-kitkaru-0148b3171/">
+        <a href="https://www.linkedin.com/in/atharva-kitkaru/">
           <motion.svg
             className="w-10 h-10 mx-2"
             xmlns="http://www.w3.org/2000/svg"
