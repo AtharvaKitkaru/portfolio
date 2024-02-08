@@ -116,7 +116,7 @@ const Publications = () => {
               exit={{ scale: 0, rotate: "0deg" }}
               transition={{ duration: 0.5, ease: easeIn }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-gradient-to-br from-slate-800 to-slate-500 text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative"
+              className="bg-gradient-to-br from-copy to-copy-light text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative"
             >
               <div className="relative z-10">
                 <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl text-indigo-600 grid place-items-center mx-auto"></div>
