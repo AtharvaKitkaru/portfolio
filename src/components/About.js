@@ -22,7 +22,7 @@ function About() {
       </div>
       <div className="flex flex-col md:flex-row justify-start align-top">
         <motion.div
-          className="flex-1 m-auto bg-no-repeat bg-fill bg-cover bg-center min-w-[80vw] min-h-[40vh]  md:min-w-[50vw]  md:h-screen flex justify-center items-center"
+          className="flex-1 m-auto bg-no-repeat bg-fill bg-contain bg-center min-w-[80vw] min-h-[40vh] md:min-w-[40vw]  md:h-screen flex justify-center items-center"
           style={{ backgroundImage: `url(${blobpng})` }}
           initial={{
             opacity: 0,
@@ -37,10 +37,14 @@ function About() {
             },
           }}
         >
-          <img className="m-auto w-2/4 h-2/4 " src={atharva2} alt="Atharva" />
+          <img
+            className="m-auto scale-50 md:scale-75"
+            src={atharva2}
+            alt="Atharva"
+          />
         </motion.div>
 
-        <div className="flex-1 mt-5 md:m-auto dark:text-white ">
+        <div className="flex-1 md:m-auto dark:text-white ">
           <div className="font-poppins">
             <Reveal>
               <p>
@@ -86,6 +90,7 @@ function About() {
                 <HashLink
                   to="https://www.linkedin.com/company/rotaract-club-of-dombivli/?originalSubdomain=in"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <span className="text-orange-400 font-semibold">
                     Rotaract Club of Dombivali

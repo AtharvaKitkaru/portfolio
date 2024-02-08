@@ -3,7 +3,7 @@ import "./Projects.css";
 import Reveal from "../common/Reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence, easeIn } from "framer-motion";
 
 const tags = {

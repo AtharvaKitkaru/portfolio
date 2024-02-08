@@ -2,9 +2,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence, easeIn } from "framer-motion";
 import Reveal from "../common/Reveal";
-import awsImage from "../assets/aws.png";
-import gkeImage from "../assets/gke.png";
-import tfImage from "../assets/tf.png";
 
 const participationsData = [
   {

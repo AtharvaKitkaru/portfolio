@@ -34,11 +34,6 @@ const Publications = () => {
     setPublicationsModalOpen(true);
   };
 
-  const closePublicationsModal = () => {
-    setSelectedPublication(null);
-    setPublicationsModalOpen(false);
-  };
-
   return (
     <div id="publications" className="page py-10">
       <div className="header flex flex-row-reverse justify-center align-middle">
