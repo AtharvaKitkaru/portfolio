@@ -10,7 +10,7 @@ const participationsData = [
     description:
       "CodeShastra 8.0 hackathon, D.J Sanghvi College Of Engineering. We developed Knack: A decentralized blockchain based music streaming platform. ",
     pdfLink:
-      "https://file.notion.so/f/f/519ceb50-14d2-4065-964d-455f317f99e1/68b556fb-ef58-481c-bb40-144246d0bcea/generated.pdf?id=ed53af8d-e549-4a57-aeb6-207ffa8d354f&table=block&spaceId=519ceb50-14d2-4065-964d-455f317f99e1&expirationTimestamp=1707408000000&signature=TyzY_emojsvUP0AvsyLoVRmrlVeNO9FCsnnU-QNO5dg&downloadName=generated.pdf",
+      "https://drive.google.com/file/d/1nxajk-2ZnQDx3nU8v0-qjPN9tuMf-Rqr/preview",
     gitLink: "https://github.com/AtharvaKitkaru/knack",
   },
   {
@@ -18,7 +18,7 @@ const participationsData = [
     // image: awsImage,
     description: "KJSCE Hack 5.0 hackathon, CodeCell of KJSCE. ",
     pdfLink:
-      "https://file.notion.so/f/f/519ceb50-14d2-4065-964d-455f317f99e1/a3c480e2-03a5-4a9b-8a6d-a5494505acad/Atharva_Kitkaru_-_KJSCE_Hack_5.pdf?id=3967a8d1-cda3-4d52-89b5-74b4e18b0c71&table=block&spaceId=519ceb50-14d2-4065-964d-455f317f99e1&expirationTimestamp=1707408000000&signature=tFiFK0do4hvaBmb4BtYfG3yqiBkULSCmXkLboJdEMrA&downloadName=Atharva+Kitkaru+-+KJSCE+Hack+5.pdf",
+      "https://drive.google.com/file/d/1xiHzoRyueB4xyfVCmOjD735CHJVrXuzY/preview",
     gitLink: "https://github.com/ZenithANAP",
   },
   {
@@ -27,7 +27,7 @@ const participationsData = [
     description:
       "Hackerbash hackathon, a 24hr online hackathon conducted by CSI department of KJSCE",
     pdfLink:
-      "https://file.notion.so/f/f/519ceb50-14d2-4065-964d-455f317f99e1/496fab25-89c9-46bf-afa8-5be0e7299a37/Hackathon.png?id=427b3fcb-e19f-424e-953d-8753a25672a4&table=block&spaceId=519ceb50-14d2-4065-964d-455f317f99e1&expirationTimestamp=1707408000000&signature=x1g8L7OBP2oXuVMxHh-uDmmDe6ptk37Ydxfe-iGnHco&downloadName=Hackathon.png",
+      "https://drive.google.com/file/d/1E_pcHe5HnHfE12JTFVjQiaPLHyBBXYdU/preview",
     gitLink: "https://github.com/Hackerbash2021",
   },
   // Add more participations as needed

@@ -131,7 +131,7 @@ function Contact() {
                   My Resume
                 </h3>
                 <iframe
-                  src="https://file.notion.so/f/f/519ceb50-14d2-4065-964d-455f317f99e1/09e1f273-5dd2-48d1-ab80-c82071332ccb/master_cv.pdf?id=6356f850-09b3-4369-b7a6-e0d8cf38480a&table=block&spaceId=519ceb50-14d2-4065-964d-455f317f99e1&expirationTimestamp=1707408000000&signature=rrEjnRhODoctF_OkKEWT7pMZRTv3N8A1aOo8Vwjj6aw&downloadName=master_cv.pdf"
+                  src="https://drive.google.com/file/d/1Yb-a-Z0nnA7Is4rGDzp6RkJWV1-OspCY/preview"
                   title="My Resume"
                   className="w-full min-h-[50vh] rounded-md py-1"
                 ></iframe>
