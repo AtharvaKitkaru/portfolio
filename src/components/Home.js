@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "../common/Reveal";
+import atharva from '../assets/atharva-2.png'
 import { easeIn, motion } from "framer-motion";
 
 function Home() {
@@ -38,7 +39,7 @@ function Home() {
       >
         <img
           className="m-auto scale-50 md:scale-75 "
-          src="atharva.png"
+          src={atharva}
           alt="Atharva"
         />
       </motion.div>

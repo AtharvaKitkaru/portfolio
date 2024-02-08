@@ -13,7 +13,7 @@ const certificationsData = [
     description:
       "This course teaches Kubernetes operations, deployment management, and GKE networking and storage.",
     pdfLink:
-      "https://file.notion.so/f/f/519ceb50-14d2-4065-964d-455f317f99e1/1aa663ea-cb86-46cd-a904-53280fb53e27/k8.pdf?id=a3162c1e-42e8-4aec-b15e-b62a5b6d12fa&table=block&spaceId=519ceb50-14d2-4065-964d-455f317f99e1&expirationTimestamp=1707400800000&signature=YZd6we3EAS_ILR5dmT8nADpPSxys0KHhmJE86UjYgJA&downloadName=ARCHITECTING+WITH+GOOGLE+KUBERNETES+ENGINE+%3A+WORKLOADS+CERTIFICATE.pdf",
+      "https://drive.google.com/file/d/1c8uZn7ELAFfa9XOIo79_Kzt9kNSW7hqV/view?usp=sharing",
   },
   {
     name: "AWS Cloud Techincal Essentials",

@@ -1,6 +1,6 @@
 import React from "react";
 import blobpng from "../assets/blob-2.png";
-import atharva2 from "../assets/atharva-2.png";
+import atharva2 from "../assets/atharva.png";
 import Reveal from "../common/Reveal";
 import { HashLink } from "react-router-hash-link";
 import { easeIn, motion } from "framer-motion";
