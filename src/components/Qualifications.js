@@ -4,6 +4,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Reveal from "../common/Reveal";
 
 function Qualifications() {
+  let ofssexp = [
+    "Engineered and containerized Oracle microservices for HDFC, leveraging Kubernetes, Docker, Helm, and WebLogic Kubernetes Operator, leading to 90% decrease in system downtime.",
+    "Reduced deployment time by 60% using Python and Shell scripts integrated with Jenkins CI/CD pipelines, for Java microservices.",
+    "Implemented load-balancing using nginx ingress controller.",
+    "Wrote custom exporters in Python, used other exporters such as node, systemd-exporter to collect metrics for monitoring of critical services. Integrated web-hook scaling of Kubernetes deployments on basis of rules in Prometheus.",
+    "Collaborated with cross-functional teams to build Grafana dashboards for monitoring.",
+    "Developed log monitoring using ELK stack and filebeat for incident analysis.",
+    "Supported 3 go-lives for foreign branches, assisted in debugging production issues for Java microservices and PL/SQL packages.",
+    "Explored Proof Of Concepts (POC) to identify project improvements.",
+    "Managed 8 OCI Linux servers (systemd services, cron jobs, etc.), 6 databases and WebLogic setups. Identified and resolved bottlenecks.",
+    "Created and maintained documentation such as release notes, manuals and conducted training sessions team on DevOps",
+    "Recipient of Dashing Debutant Award"
+  ];
   return (
     <div id="qualifications" className="page py-10">
       <div className="header flex flex-row justify-center align-middle  mb-[1rem] md:mt-[10rem] md:mb-[3rem]">
@@ -94,41 +107,11 @@ function Qualifications() {
                     Oracle Financial Software Services | Associate Consultant
                   </Reveal>
                 </h3>
-                <p className=" text-sm  font-normal text-copy-lighter p-1">
-                  <Reveal>
-                    Led and delivered a scalable, zero-downtime containerization
-                    solution for a critical service, managing the entire
-                    lifecycle from inception to production using Crio,
-                    Kubernetes, Helm, Grafana, Prometheus, ELK, and Jenkins.
-                  </Reveal>
-                </p>
-                <p className=" text-sm  font-normal text-copy-lighter p-1">
-                  <Reveal>
-                    Orchestrated development and administration of 6 database
-                    schemas. Engineered and managed end-to-end WebLogic setups
-                    for 6 applications, ensuring robust deployment and
-                    operation.
-                  </Reveal>{" "}
-                </p>
-                <p className=" text-sm  font-normal text-copy-lighter p-1">
-                  <Reveal>
-                    {" "}
-                    Oversaw Linux server management, including software
-                    installations, system optimization, troubleshooting, and
-                    infrastructure enhancement.
-                  </Reveal>
-                </p>
-                <p className=" text-sm  font-normal text-copy-lighter p-1">
-                  <Reveal>
-                    {" "}
-                    Reduced 60% deployment time by automating deployment
-                    processes, data source creation, cronjobs, and code commits
-                    using Python and shell scripts in sync with Jenkins.
-                  </Reveal>
-                </p>
-                <p className=" text-sm  font-normal text-copy-lighter p-1">
-                  <Reveal> Received Dashing Debutant award</Reveal>
-                </p>
+                {ofssexp.map((exp) => {
+                  <p className=" text-sm  font-normal text-copy-lighter p-1">
+                    <Reveal>{exp}</Reveal>
+                  </p>;
+                })}
               </li>
             </section>
             <li className="mb-7 ms-4">
