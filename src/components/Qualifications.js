@@ -17,6 +17,11 @@ function Qualifications() {
     "Created and maintained documentation such as release notes, manuals and conducted training sessions team on DevOps",
     "Recipient of Dashing Debutant Award"
   ];
+  let ppexp =[
+    "Streamlined the Final Year Project process by architecting a full-stack web application.",
+    "Leveraged React.js for a user-friendly, modular and responsive UI, while Redux facilitated efficient state management.",
+    "Developed robust RESTful APIs using Django REST Framework, and integrated secure Firebase authentication",
+  ]
   return (
     <div id="qualifications" className="page py-10">
       <div className="header flex flex-row justify-center align-middle  mb-[1rem] md:mt-[10rem] md:mb-[3rem]">
@@ -135,13 +140,17 @@ function Qualifications() {
                   </h3>
                 </a>
               </Reveal>
-              <p className="text-sm font-normal text-copy-lighter p-1">
+
+              {
+                ppexp.map((pp)=>{
+<p className="text-sm font-normal text-copy-lighter p-1">
                 <Reveal>
-                  Crafted a comprehensive Web Portal, powered by ReactJS,
-                  Django, and Firebase, to automate and streamline LY Projects
-                  workflows.
+                  {pp}
                 </Reveal>
               </p>
+                })
+              }
+
             </li>
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
@@ -165,9 +174,8 @@ function Qualifications() {
               </Reveal>
               <p className="text-sm font-normal text-copy-lighter p-1">
                 <Reveal>
-                  Created a Internship Portal for IT Department which helps
-                  faculties to float internships and students to find and apply
-                  for the same, using MERN stack with Firebase.
+                Built an Internship Portal for the IT Department using ReactJS for a dynamic, responsive UI, Express.js for server-side functionality,
+MongoDB, and Firebase for authentication and security.
                 </Reveal>
               </p>
             </li>
