@@ -132,7 +132,7 @@ function Contact() {
                 </h3>
 
                 <iframe
-                  src="https://drive.google.com/file/d/1hjSIwGDmnHXEOKd5DhXSEefTE2tWclrc/preview"
+                  src="https://drive.google.com/file/d/1uari0LC9Vagj11MRc1aoy3dY3qu6VoF_/preview"
                   title="My Resume"
                   className="w-full min-h-[50vh] rounded-md py-1"
                 ></iframe>
