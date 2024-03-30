@@ -15,13 +15,13 @@ function Qualifications() {
     "Explored Proof Of Concepts (POC) to identify project improvements.",
     "Managed 8 OCI Linux servers (systemd services, cron jobs, etc.), 6 databases and WebLogic setups. Identified and resolved bottlenecks.",
     "Created and maintained documentation such as release notes, manuals and conducted training sessions team on DevOps",
-    "Recipient of Dashing Debutant Award"
+    "Recipient of Dashing Debutant Award",
   ];
-  let ppexp =[
+  let ppexp = [
     "Streamlined the Final Year Project process by architecting a full-stack web application.",
     "Leveraged React.js for a user-friendly, modular and responsive UI, while Redux facilitated efficient state management.",
     "Developed robust RESTful APIs using Django REST Framework, and integrated secure Firebase authentication",
-  ]
+  ];
   return (
     <div id="qualifications" className="page py-10">
       <div className="header flex flex-row justify-center align-middle  mb-[1rem] md:mt-[10rem] md:mb-[3rem]">
@@ -112,11 +112,11 @@ function Qualifications() {
                     Oracle Financial Software Services | Associate Consultant
                   </Reveal>
                 </h3>
-                {ofssexp.map((exp) => {
+                {ofssexp.map((exp) => (
                   <p className=" text-sm  font-normal text-copy-lighter p-1">
                     <Reveal>{exp}</Reveal>
-                  </p>;
-                })}
+                  </p>
+                ))}
               </li>
             </section>
             <li className="mb-7 ms-4">
@@ -141,16 +141,11 @@ function Qualifications() {
                 </a>
               </Reveal>
 
-              {
-                ppexp.map((pp)=>{
-<p className="text-sm font-normal text-copy-lighter p-1">
-                <Reveal>
-                  {pp}
-                </Reveal>
-              </p>
-                })
-              }
-
+              {ppexp.map((pp) => (
+                <p className="text-sm font-normal text-copy-lighter p-1">
+                  <Reveal>{pp}</Reveal>
+                </p>
+              ))}
             </li>
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
@@ -174,8 +169,10 @@ function Qualifications() {
               </Reveal>
               <p className="text-sm font-normal text-copy-lighter p-1">
                 <Reveal>
-                Built an Internship Portal for the IT Department using ReactJS for a dynamic, responsive UI, Express.js for server-side functionality,
-MongoDB, and Firebase for authentication and security.
+                  Built an Internship Portal for the IT Department using ReactJS
+                  for a dynamic, responsive UI, Express.js for server-side
+                  functionality, MongoDB, and Firebase for authentication and
+                  security.
                 </Reveal>
               </p>
             </li>
