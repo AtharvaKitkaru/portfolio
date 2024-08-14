@@ -126,7 +126,7 @@ function Contact() {
             >
               <div className="relative z-10">
                 <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl text-primary grid place-items-center mx-auto"></div>
-
+{/* 
                 <h3 className="text-2xl font-bold text-center mb-2">
                   My Resume
                 </h3>
@@ -135,7 +135,7 @@ function Contact() {
                   src="https://drive.google.com/file/d/1uari0LC9Vagj11MRc1aoy3dY3qu6VoF_/preview"
                   title="My Resume"
                   className="w-full min-h-[50vh] rounded-md py-1"
-                ></iframe>
+                ></iframe> */}
 
                 <div className="flex gap-2 mt-2">
                   <button
