@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Reveal from "../common/Reveal";
 
 function Qualifications() {
+  let oracleexp = [
+    "Working on Oracle Database Kubernetes Operator, written in GoLang and deployed on Oracle Cloud Infrastucture in Oracle Kubernetes Engine.",
+  ]
   let ofssexp = [
     "Engineered and containerized Oracle microservices for HDFC, leveraging Kubernetes, Docker, Helm, and WebLogic Kubernetes Operator, leading to 90% decrease in system downtime.",
     "Reduced deployment time by 60% using Python and Shell scripts integrated with Jenkins CI/CD pipelines, for Java microservices.",
@@ -101,6 +104,24 @@ function Qualifications() {
           </div>
 
           <ol className="relative border-s border-gray-500">
+          <section id="oracle">
+              <li className="mb-7 ms-4">
+                <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-copy-lighter ">
+                  <Reveal> June 2024 - Present</Reveal>
+                </time>
+                <h3 className="text-md text-copy-light font-semibold uppercase dark:text-white">
+                  <Reveal>
+                    Oracle | Software Developer
+                  </Reveal>
+                </h3>
+                {oracleexp.map((exp) => (
+                  <p className=" text-sm  font-normal text-copy-lighter p-1">
+                    <Reveal>{exp}</Reveal>
+                  </p>
+                ))}
+              </li>
+            </section>
             <section id="ofss">
               <li className="mb-7 ms-4">
                 <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-slate-500 dark:border-white"></div>
