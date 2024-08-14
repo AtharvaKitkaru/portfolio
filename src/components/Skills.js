@@ -14,19 +14,21 @@ const skillsData = {
     "JQuery",
   ],
   backend: [
-    "Node.js",
+    "Java",
     "Django",
+    "Node.js",
     "Express.js",
     "Firebase",
     "SQL",
     "MongoDB",
     "PHP",
-    "Java",
+    
   ],
   devops: [
     "Docker",
     "Kubernetes",
     "Helm",
+    "OCI",
     "Jenkins",
     "Git",
     "Crio",
@@ -45,7 +47,7 @@ const skillsData = {
     "Baseline Classifiers",
   ],
   android: ["Flutter", "Firebase"],
-  sysAdmin: ["Linux", "AWS", "Shell Scripting", "Networking"],
+  sysAdmin: ["Linux", "Shell Scripting", "Networking"],
 };
 
 function Skills() {

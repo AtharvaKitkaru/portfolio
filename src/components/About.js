@@ -49,8 +49,7 @@ function About() {
             <Reveal>
               <p>
                 <code className="text-4xl">H</code>i! I'm Atharva Kitkaru,
-                currently based in Mumbai. I enjoy web development, additionaly
-                I've experience in Machine Learning and dabbled with Flutter. I
+                currently based in Bengaluru. I enjoy web development, I have strong experience in React.js and Java. I have also worked heavily on Docker, Kubernetes, Python and Shell Scripting. Apart from that, I have knowledge of OCI and have a certification on AWS. I
                 thrive on the versatility of tools and frameworks, adapting to
                 whichever best solves the problem at hand. Curious? Explore{" "}
                 <HashLink to="/#skills">
@@ -71,32 +70,20 @@ function About() {
 
             <Reveal>
               <p>
-                I am employed at{" "}
+                I am working at{" "}
                 <HashLink to="/qualifications/#ofss">
                   <span className="text-orange-400 font-semibold">
-                    Oracle Financial Software Services
+                    Oracle
                   </span>
                 </HashLink>{" "}
-                as Associate Consultant, primarily working on DevOps, System
-                Administration and automating whatever possible :)).{" "}
+                as a Software Developer, primarily working on Oracle Database Kubernetes Operator, an operator written in GoLang for automating the process of orchestrating Oracle database on Oracle Kubernetes Engine.{" "}
               </p>
             </Reveal>
             <br />
 
             <Reveal>
               <p>
-                Beyond work, I proudly contribute as a Professional Development
-                Board of Director at{" "}
-                <HashLink
-                  to="https://www.linkedin.com/company/rotaract-club-of-dombivli/?originalSubdomain=in"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="text-orange-400 font-semibold">
-                    Rotaract Club of Dombivali
-                  </span>
-                </HashLink>
-                . I also love to play Badminton.
+                 I also love to play Badminton.
               </p>
             </Reveal>
             <br />
